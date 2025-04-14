@@ -139,6 +139,8 @@ async function signInWithGoogle() {
 async function signOut() {
     try {
         await firebaseSignOut(auth);
+        // Redirect to homepage after successful sign out
+        window.location.href = 'index.html';
     } catch (error) {
         console.error('Sign out error:', error);
         throw error;
