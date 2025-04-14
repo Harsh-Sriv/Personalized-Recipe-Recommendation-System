@@ -1,317 +1,161 @@
-import psycopg2
-import json
-import re
-import numpy as np
 import pandas as pd
-from psycopg2.extras import RealDictCursor
+import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import json
+import re
+import traceback
 
 class RecipeRecommender:
-    def __init__(self, db_name, db_user, db_password, db_host='localhost', db_port='5432'):
-        self.connection_params = {
-            'dbname': db_name,
-            'user': db_user,
-            'password': db_password,
-            'host': db_host,
-            'port': db_port
-        }
-        self.conn = None
-        self.cursor = None
+    def __init__(self, csv_path='recipe_dataset_200_with_instructions.csv'):
+        self.csv_path = csv_path
         self.recipe_df = None
-        self.ingredient_matrix = None
-        self.category_matrix = None
-        self.recipe_id_map = {}
-        self.inverse_recipe_id_map = {}
         
-    def connect(self):
-        """Connect to the PostgreSQL database"""
-        try:
-            self.conn = psycopg2.connect(**self.connection_params)
-            self.cursor = self.conn.cursor(cursor_factory=RealDictCursor)
-            print("Connected to the database successfully!")
-            return True
-        except Exception as e:
-            print(f"Error connecting to the database: {str(e)}")
-            return False
-    
-    def disconnect(self):
-        """Close the database connection"""
-        if self.cursor:
-            self.cursor.close()
-        if self.conn:
-            self.conn.close()
-        print("Database connection closed.")
-    
-    def extract_ingredient_name(self, ingredient_with_quantity):
-        """Extract the base ingredient name from a string with quantity.
-        Example: '2 cups all-purpose flour' -> 'flour'
-                 '1/2 teaspoon salt' -> 'salt'
-        """
-        # Strip any quotes
-        ingredient = ingredient_with_quantity.strip('"\'')
-        
-        # Remove quantities like "1 cup", "2 tablespoons", etc.
-        # This pattern matches numbers, fractions, and common measurement units
-        pattern = r'^(\d+\.?\d*|\d+/\d+)?\s*([a-zA-Z]+\s)?(cups?|tablespoons?|teaspoons?|pounds?|ounces?|oz\.?|lbs\.?|tbsp\.?|tsp\.?|g\.?|kg\.?|ml\.?|l\.?|inch(?:es)?|cm|mm|pinch(?:es)?|dash(?:es)?|to taste|large|medium|small)?\s+'
-        ingredient_name = re.sub(pattern, '', ingredient, flags=re.IGNORECASE)
-        
-        # Handle common ingredients with multiple words
-        multi_word_ingredients = [
-            "all-purpose flour", "olive oil", "vegetable oil", "baking powder",
-            "baking soda", "brown sugar", "coconut oil", "cream cheese"
-        ]
-        
-        for multi_word in multi_word_ingredients:
-            if multi_word in ingredient.lower():
-                return multi_word
-        
-        # Split and take the last word (usually the main ingredient)
-        # But avoid single-letter words like "a" or "I"
-        words = ingredient_name.split()
-        if words:
-            # Check for compound ingredients with "and" or commas
-            if "," in ingredient_name or " and " in ingredient_name.lower():
-                return ingredient_name  # Keep the full string for compound ingredients
-            else:
-                # For most cases, the main ingredient is the last word
-                last_word = words[-1].lower()
-                if len(last_word) > 1:  # Avoid single-letter words
-                    return last_word
-                elif len(words) > 1:
-                    return words[-2].lower()
-        
-        # If all else fails, return the original text
-        return ingredient_name.lower()
-    
     def load_recipe_data(self):
-        """Load recipe data from the database into a pandas DataFrame"""
+        """Load recipe data from CSV file into a pandas DataFrame"""
         try:
-            # Modified query to match your actual database schema
-            self.cursor.execute("""
-                SELECT recipe_id, title, ingredients, category, ratings, reviews, calories, total_mins 
-                FROM recipes
-            """)
-            recipes = self.cursor.fetchall()
+            # Read the CSV file
+            self.recipe_df = pd.read_csv(self.csv_path)
             
-            # Convert to DataFrame
-            self.recipe_df = pd.DataFrame(recipes)
-            
-            # Create a mapping from recipe_id to matrix index
-            for i, recipe_id in enumerate(self.recipe_df['recipe_id']):
-                self.recipe_id_map[int(recipe_id)] = i
-                self.inverse_recipe_id_map[i] = int(recipe_id)
-            
-            # Parse JSON strings
-            self.recipe_df['ingredients'] = self.recipe_df['ingredients'].apply(
-                lambda x: json.loads(x) if isinstance(x, str) else x
-            )
-            self.recipe_df['category'] = self.recipe_df['category'].apply(
-                lambda x: json.loads(x) if isinstance(x, str) else x
-            )
-            
-            # Add original ingredients list (with quantities)
-            self.recipe_df['original_ingredients'] = self.recipe_df['ingredients'].copy()
-            
-            # Extract base ingredient names
+            # Process ingredients text for matching
             self.recipe_df['ingredients_clean'] = self.recipe_df['ingredients'].apply(
-                lambda x: [self.extract_ingredient_name(ing) for ing in x] if isinstance(x, list) else []
+                lambda x: [ing.strip('"') for ing in eval(x) if ing]
             )
             
-            # Create text representation for ingredients and categories
-            self.recipe_df['ingredients_text'] = self.recipe_df['ingredients_clean'].apply(
-                lambda x: ' '.join(x) if isinstance(x, list) else ''
-            )
-            self.recipe_df['category_text'] = self.recipe_df['category'].apply(
-                lambda x: ' '.join(x) if isinstance(x, list) else ''
-            )
+            # Convert ratings to float
+            self.recipe_df['rating'] = pd.to_numeric(self.recipe_df['ratings'], errors='coerce')
             
-            print(f"Loaded {len(self.recipe_df)} recipes.")
+            # Convert calories and total_mins to numeric
+            self.recipe_df['calories'] = pd.to_numeric(self.recipe_df['calories'], errors='coerce')
+            self.recipe_df['total_mins'] = pd.to_numeric(self.recipe_df['total_mins'], errors='coerce')
+            
+            print(f"Loaded {len(self.recipe_df)} recipes successfully!")
             return True
         except Exception as e:
             print(f"Error loading recipe data: {str(e)}")
+            traceback.print_exc()
             return False
     
-    def build_ingredient_matrix(self):
-        """Build a TF-IDF matrix for ingredients"""
+    def recommend_recipes_by_ingredients(self, ingredients, max_calories=None, dietary_restrictions=None, max_time=None, difficulty=None):
+        """
+        Recommend recipes based on available ingredients and constraints
+        """
         try:
-            vectorizer = TfidfVectorizer(stop_words='english')
-            self.ingredient_matrix = vectorizer.fit_transform(self.recipe_df['ingredients_text'])
-            print("Ingredient similarity matrix built.")
-            return True
-        except Exception as e:
-            print(f"Error building ingredient matrix: {str(e)}")
-            return False
-    
-    def build_category_matrix(self):
-        """Build a TF-IDF matrix for categories"""
-        try:
-            vectorizer = TfidfVectorizer()
-            self.category_matrix = vectorizer.fit_transform(self.recipe_df['category_text'])
-            print("Category similarity matrix built.")
-            return True
-        except Exception as e:
-            print(f"Error building category matrix: {str(e)}")
-            return False
-    
-    def initialize_recommender(self):
-        """Initialize the recommender by loading data and building matrices"""
-        if self.connect():
-            if self.load_recipe_data():
-                self.build_ingredient_matrix()
-                self.build_category_matrix()
-                return True
-        return False
-    
-    def get_similar_recipes_by_ingredients(self, recipe_id, top_n=5):
-        """Get similar recipes based on ingredients"""
-        try:
-            # Convert recipe_id to Python int if it's a numpy.int64
-            recipe_id = int(recipe_id)
+            if self.recipe_df is None:
+                if not self.load_recipe_data():
+                    return []
+
+            # Clean and normalize input ingredients
+            cleaned_ingredients = [ing.lower().strip() for ing in ingredients]
             
-            if recipe_id not in self.recipe_id_map:
-                print(f"Recipe ID {recipe_id} not found.")
-                return []
+            # Filter recipes based on constraints
+            filtered_df = self.recipe_df.copy()
             
-            recipe_idx = self.recipe_id_map[recipe_id]
-            recipe_vector = self.ingredient_matrix[recipe_idx]
+            if max_calories:
+                filtered_df = filtered_df[filtered_df['calories'] <= max_calories]
             
-            # Calculate cosine similarity
-            similarities = cosine_similarity(recipe_vector, self.ingredient_matrix).flatten()
+            if max_time:
+                filtered_df = filtered_df[filtered_df['total_mins'] <= max_time]
             
-            # Get indices of top similar recipes (excluding the input recipe)
-            similar_indices = similarities.argsort()[:-top_n-1:-1]
-            similar_indices = [idx for idx in similar_indices if idx != recipe_idx][:top_n]
+            if dietary_restrictions:
+                for restriction in dietary_restrictions:
+                    if restriction == 'vegetarian':
+                        filtered_df = filtered_df[filtered_df['category'].apply(lambda x: 'Vegetarian' in eval(x) if isinstance(x, str) else False)]
+                    elif restriction == 'vegan':
+                        filtered_df = filtered_df[filtered_df['category'].apply(lambda x: 'Vegan' in eval(x) if isinstance(x, str) else False)]
+                    elif restriction == 'gluten-free':
+                        filtered_df = filtered_df[filtered_df['category'].apply(lambda x: 'Gluten-Free' in eval(x) if isinstance(x, str) else False)]
             
-            # Get recipe details
-            similar_recipes_with_scores = []
-            for idx in similar_indices:
-                recipe = self.recipe_df.iloc[idx].to_dict()
-                recipe['similarity_score'] = similarities[idx]
-                similar_recipes_with_scores.append(recipe)
-            
-            return similar_recipes_with_scores
-        except Exception as e:
-            print(f"Error getting similar recipes: {str(e)}")
-            return []
-    
-    def recommend_recipes_by_ingredients(self, user_ingredients, top_n=5, max_calories=None):
-        """Recommend recipes based on a list of ingredients with calorie constraint
-        and ingredient matching"""
-        try:
-            # Clean and normalize user ingredients
-            user_ingredients_clean = [self.extract_ingredient_name(ingredient.lower()) for ingredient in user_ingredients]
-            
-            # Count ingredient matches for each recipe and prepare results
-            match_results = []
-            
-            for idx, row in self.recipe_df.iterrows():
-                # Skip if recipe doesn't meet calorie constraint
-                if max_calories is not None and max_calories > 0 and row['calories'] > max_calories:
-                    continue
+            # Calculate recipe scores based on ingredient matches
+            recipe_scores = []
+            for _, recipe in filtered_df.iterrows():
+                recipe_ingredients = [ing.lower() for ing in recipe['ingredients_clean']]
+                matching_ingredients = set(cleaned_ingredients) & set(recipe_ingredients)
                 
-                # Get recipe ingredients (cleaned base ingredients)
-                recipe_ingredients_clean = row['ingredients_clean'] if isinstance(row['ingredients_clean'], list) else []
+                # Calculate score based on ingredient matches and recipe rating
+                match_score = len(matching_ingredients) / len(cleaned_ingredients)
+                rating_score = float(recipe['rating']) / 5.0 if pd.notna(recipe['rating']) else 0.5
                 
-                # Count matching ingredients
-                matched_ingredients = set(recipe_ingredients_clean).intersection(set(user_ingredients_clean))
-                match_count = len(matched_ingredients)
+                # Combine scores with weights
+                total_score = (0.7 * match_score) + (0.3 * rating_score)
                 
-                # Only consider recipes with at least one matching ingredient
-                if match_count > 0:
-                    # Calculate percentage of recipe ingredients that are available
-                    ingredient_match_percent = match_count / len(recipe_ingredients_clean) if recipe_ingredients_clean else 0
-                    
-                    # Calculate how many ingredients are missing
-                    missing_ingredients_clean = list(set(recipe_ingredients_clean) - set(user_ingredients_clean))
-                    missing_count = len(missing_ingredients_clean)
-                    
-                    # Get original ingredients with quantities for matched and missing ingredients
-                    matched_ingredients_original = []
-                    missing_ingredients_original = []
-                    
-                    for i, clean_ing in enumerate(row['ingredients_clean']):
-                        if clean_ing in matched_ingredients:
-                            matched_ingredients_original.append(row['original_ingredients'][i])
-                        elif clean_ing in missing_ingredients_clean:
-                            missing_ingredients_original.append(row['original_ingredients'][i])
-                    
-                    # Add to results
-                    recipe_data = row.to_dict()
-                    recipe_data['match_count'] = match_count
-                    recipe_data['missing_count'] = missing_count
-                    recipe_data['total_ingredients'] = len(recipe_ingredients_clean)
-                    recipe_data['match_percent'] = ingredient_match_percent
-                    recipe_data['matched_ingredients'] = matched_ingredients_original
-                    recipe_data['missing_ingredients'] = missing_ingredients_original
-                    recipe_data['matched_ingredients_clean'] = list(matched_ingredients)
-                    recipe_data['missing_ingredients_clean'] = missing_ingredients_clean
-                    
-                    match_results.append(recipe_data)
+                recipe_scores.append({
+                    'recipe_id': recipe['recipe_id'],
+                    'title': recipe['title'],
+                    'score': total_score,
+                    'matching_ingredients': list(matching_ingredients),
+                    'calories': float(recipe['calories']) if pd.notna(recipe['calories']) else None,
+                    'total_mins': int(recipe['total_mins']) if pd.notna(recipe['total_mins']) else None,
+                    'rating': float(recipe['rating']) if pd.notna(recipe['rating']) else None,
+                    'image_url': recipe.get('image_url', '')
+                })
             
-            # Sort by match percentage (descending)
-            match_results.sort(key=lambda x: x['match_percent'], reverse=True)
+            # Sort recipes by score and return top 10
+            recipe_scores.sort(key=lambda x: x['score'], reverse=True)
+            return recipe_scores[:10]
             
-            # Return top N results
-            return match_results[:top_n]
         except Exception as e:
-            print(f"Error recommending recipes: {str(e)}")
+            print(f"Error in recommend_recipes_by_ingredients: {str(e)}")
+            traceback.print_exc()
             return []
     
     def get_recipe_details(self, recipe_id):
-        """Get detailed information about a recipe"""
+        """
+        Get detailed information about a specific recipe
+        """
         try:
-            # Convert recipe_id to Python int if it's a numpy.int64
-            recipe_id = int(recipe_id)
-            
-            if recipe_id not in self.recipe_id_map:
-                print(f"Recipe ID {recipe_id} not found.")
-                return None
-            
-            idx = self.recipe_id_map[recipe_id]
-            recipe = self.recipe_df.iloc[idx].to_dict()
-            
-            # Get reviews
-            self.cursor.execute("""
-                SELECT r.review, r.rating, u.username
-                FROM reviews r
-                JOIN users u ON r.user_id = u.user_id
-                WHERE r.recipe_id = %s
-                ORDER BY r.rating DESC
-                LIMIT 5
-            """, (recipe_id,))
-            reviews = self.cursor.fetchall()
-            
-            recipe['reviews_detail'] = reviews
-            
-            return recipe
-        except Exception as e:
-            print(f"Error getting recipe details: {str(e)}")
-            return None
+            if self.recipe_df is None:
+                if not self.load_recipe_data():
+                    return None
 
-    def get_common_ingredients(self):
-        """Get a list of common ingredients for user selection"""
+            # Find the recipe in the DataFrame
+            recipe = self.recipe_df[self.recipe_df['recipe_id'] == recipe_id]
+            if recipe.empty:
+                print(f"Recipe with ID {recipe_id} not found")
+                return None
+
+            recipe = recipe.iloc[0]
+            
+            # Convert recipe data to a dictionary with proper type handling
+            recipe_details = {
+                'recipe_id': recipe['recipe_id'],
+                'title': recipe['title'],
+                'description': recipe.get('instructions', ''),
+                'ingredients': recipe['ingredients_clean'],
+                'instructions': recipe.get('instructions', '').split('\n') if pd.notna(recipe.get('instructions')) else [],
+                'calories': float(recipe['calories']) if pd.notna(recipe['calories']) else None,
+                'total_mins': int(recipe['total_mins']) if pd.notna(recipe['total_mins']) else None,
+                'rating': float(recipe['rating']) if pd.notna(recipe['rating']) else None,
+                'image_url': recipe.get('image_url', ''),
+                'categories': eval(recipe['category']) if pd.notna(recipe['category']) else []
+            }
+
+            return recipe_details
+
+        except Exception as e:
+            print(f"Error in get_recipe_details: {str(e)}")
+            traceback.print_exc()
+            return None
+    
+    def get_common_ingredients(self, min_frequency=5):
+        """Get a list of common ingredients from the dataset"""
         try:
-            # Use the cleaned ingredient names for better grouping
+            # Flatten all ingredients lists
             all_ingredients = []
             for ingredients in self.recipe_df['ingredients_clean']:
-                if isinstance(ingredients, list):
-                    all_ingredients.extend(ingredients)
+                all_ingredients.extend(ingredients)
             
-            # Count occurrences of each ingredient
-            ingredient_counts = {}
-            for ingredient in all_ingredients:
-                ingredient = ingredient.lower()
-                ingredient_counts[ingredient] = ingredient_counts.get(ingredient, 0) + 1
+            # Count ingredient frequencies
+            ingredient_counts = pd.Series(all_ingredients).value_counts()
             
-            # Sort ingredients by frequency
-            sorted_ingredients = sorted(ingredient_counts.items(), key=lambda x: x[1], reverse=True)
+            # Filter by minimum frequency
+            common_ingredients = ingredient_counts[ingredient_counts >= min_frequency].index.tolist()
             
-            # Return top ingredients (e.g., top 100)
-            top_ingredients = [ingredient for ingredient, count in sorted_ingredients[:100]]
-            return top_ingredients
+            return sorted(common_ingredients)
+            
         except Exception as e:
             print(f"Error getting common ingredients: {str(e)}")
+            traceback.print_exc()
             return []
 
 def get_user_input():
@@ -357,6 +201,27 @@ def get_user_input():
         except ValueError:
             print("Invalid calorie input, using no limit.")
     
+    print("\nEnter maximum cooking time (leave empty for no limit):")
+    time_input = input("> ")
+    max_time = None
+    if time_input.strip():
+        try:
+            max_time = float(time_input)
+        except ValueError:
+            print("Invalid time input, using no limit.")
+    
+    print("\nEnter difficulty (leave empty for no preference):")
+    difficulty_input = input("> ")
+    difficulty = None
+    if difficulty_input.strip():
+        difficulty = difficulty_input.strip()
+    
+    print("\nEnter dietary restrictions (comma-separated, leave empty if none):")
+    restrictions_input = input("> ")
+    dietary_restrictions = None
+    if restrictions_input.strip():
+        dietary_restrictions = [restriction.strip() for restriction in restrictions_input.split(',')]
+    
     print("\nHow many recipe recommendations would you like?")
     count_input = input("> ")
     count = 5  # Default
@@ -366,7 +231,7 @@ def get_user_input():
         except ValueError:
             print("Invalid count, using default of 5.")
     
-    return ingredients_list, max_calories, count
+    return ingredients_list, max_calories, count, max_time, difficulty, dietary_restrictions
 
 def display_recipe(recipe, user_ingredients):
     """Display recipe details in a formatted way with ingredient availability"""
@@ -403,7 +268,7 @@ def display_recipe(recipe, user_ingredients):
     print("\nAll Ingredients:")
     if isinstance(recipe['original_ingredients'], list):
         # Clean user ingredients for comparison
-        user_ingredients_clean = [extract_ingredient_name(ing.lower()) for ing in user_ingredients]
+        user_ingredients_clean = [self.extract_ingredient_name(ing.lower()) for ing in user_ingredients]
         
         # Display ingredients with availability status
         for i, full_ingredient in enumerate(recipe['original_ingredients'], 1):
@@ -479,17 +344,23 @@ def main():
     if recommender:
         try:
             # Get user input
-            user_ingredients, max_calories, count = get_user_input()
+            user_ingredients, max_calories, count, max_time, difficulty, dietary_restrictions = get_user_input()
             
             # Display what the system is doing
             print(f"\nSearching for recipes with: {', '.join(user_ingredients)}")
             if max_calories:
                 print(f"Maximum calories: {max_calories}")
+            if max_time:
+                print(f"Maximum cooking time: {max_time} minutes")
+            if difficulty:
+                print(f"Difficulty: {difficulty}")
+            if dietary_restrictions:
+                print(f"Dietary Restrictions: {', '.join(dietary_restrictions)}")
             print("Finding the best matches based on ingredient availability...\n")
             
             # Get recommendations based on ingredient matching
             recommended_recipes = recommender.recommend_recipes_by_ingredients(
-                user_ingredients, top_n=count, max_calories=max_calories
+                user_ingredients, max_calories=max_calories, max_time=max_time, difficulty=difficulty, dietary_restrictions=dietary_restrictions
             )
             
             if recommended_recipes:
