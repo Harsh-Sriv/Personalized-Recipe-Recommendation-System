@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details - Recipe Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .recipe-details-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .recipe-header {
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1));
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .recipe-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .recipe-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .recipe-meta i {
+            color: var(--primary-color);
+        }
+
+        .recipe-image {
+            width: 100%;
+            max-height: 500px;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .recipe-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+
+        .recipe-sidebar {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 12px;
+            height: fit-content;
+        }
+
+        .recipe-sidebar h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .ingredients-list li:last-child {
+            border-bottom: none;
+        }
+
+        .ingredients-list i {
+            color: var(--primary-color);
+        }
+
+        .recipe-main {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .recipe-section {
+            margin-bottom: 2rem;
+        }
+
+        .recipe-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .instructions-list {
+            list-style-type: decimal;
+            padding-left: 1.5rem;
+        }
+
+        .instructions-list li {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .back-button:hover {
+            background-color: #388E3C;
+            transform: translateY(-2px);
+        }
+
+        .category-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .category-tag {
+            background-color: rgba(76, 175, 80, 0.1);
+            color: var(--primary-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-content {
+                grid-template-columns: 1fr;
+            }
+
+            .recipe-header h1 {
+                font-size: 2rem;
+            }
+
+            .recipe-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-utensils"></i>
+                Recipe Recommender
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recommender.html">Recipe Recommender</a>
+            <a href="help.html">Help</a>
+            <a href="settings.html">Settings</a>
+        </div>
+    </nav>
+
+    <div class="recipe-details-container">
+        <button class="back-button" onclick="window.history.back()">
+            <i class="fas fa-arrow-left"></i> Back to Results
+        </button>
+
+        <div class="recipe-header">
+            <h1 id="recipeTitle">Loading Recipe...</h1>
+            <div class="recipe-meta">
+                <span><i class="fas fa-clock"></i> <span id="cookingTime">-</span> mins</span>
+                <span><i class="fas fa-fire"></i> <span id="calories">-</span> calories</span>
+                <span><i class="fas fa-star"></i> <span id="rating">-</span> (<span id="reviews">-</span>
+                    reviews)</span>
+            </div>
+            <div class="category-tags" id="categoryTags"></div>
+        </div>
+
+        <div class="recipe-image">
+            <img id="recipeImage" src="" alt="">
+        </div>
+
+        <div class="recipe-content">
+            <div class="recipe-sidebar">
+                <h3>Ingredients</h3>
+                <ul class="ingredients-list" id="ingredientsList"></ul>
+            </div>
+
+            <div class="recipe-main">
+                <div class="recipe-section">
+                    <h3>Instructions</h3>
+                    <ol class="instructions-list" id="instructionsList"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Recipe Recommender. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

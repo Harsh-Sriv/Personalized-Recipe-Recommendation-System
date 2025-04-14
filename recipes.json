@@ -1,0 +1,4568 @@
+[
+  {
+    "recipe_id": "1",
+    "title": "Delicious Recipe 1",
+    "ingredients": [
+      "Paprika",
+      "Beef",
+      "Yogurt",
+      "Beef strips",
+      "Cream",
+      "Broccoli"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.3,
+    "reviews": 128,
+    "calories": 795,
+    "total_mins": 42,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+1",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "2",
+    "title": "Delicious Recipe 2",
+    "ingredients": [
+      "Ginger",
+      "Olive oil",
+      "Yogurt",
+      "Cheese",
+      "Milk",
+      "Asparagus",
+      "Avocado",
+      "Vanilla extract",
+      "Cucumber"
+    ],
+    "category": [
+      "Keto",
+      "Vegetarian"
+    ],
+    "ratings": 3.8,
+    "reviews": 444,
+    "calories": 631,
+    "total_mins": 63,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+2",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "3",
+    "title": "Delicious Recipe 3",
+    "ingredients": [
+      "Butter",
+      "Zucchini",
+      "Chicken breast",
+      "Lettuce",
+      "Cheese",
+      "Pork"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.5,
+    "reviews": 99,
+    "calories": 274,
+    "total_mins": 15,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+3",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "4",
+    "title": "Delicious Recipe 4",
+    "ingredients": [
+      "Dill",
+      "Milk",
+      "Cherry tomatoes",
+      "Lime",
+      "Soy sauce",
+      "Turkey",
+      "Ginger"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.5,
+    "reviews": 589,
+    "calories": 664,
+    "total_mins": 48,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+4",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "5",
+    "title": "Delicious Recipe 5",
+    "ingredients": [
+      "Onion",
+      "Beef",
+      "Bell peppers",
+      "Cucumber",
+      "Vanilla extract",
+      "Parmesan",
+      "Broccoli",
+      "Basil"
+    ],
+    "category": [
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ratings": 4.3,
+    "reviews": 222,
+    "calories": 724,
+    "total_mins": 35,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+5",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "6",
+    "title": "Delicious Recipe 6",
+    "ingredients": [
+      "Mushroom",
+      "Tomatoes",
+      "Potato",
+      "Cheese",
+      "Cream",
+      "Cumin",
+      "Chicken breast"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 215,
+    "calories": 271,
+    "total_mins": 65,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+6",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "7",
+    "title": "Delicious Recipe 7",
+    "ingredients": [
+      "Cream",
+      "Mushrooms",
+      "Salt",
+      "Oregano",
+      "Cream",
+      "Chocolate chips",
+      "Tomato",
+      "Mushroom"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4,
+    "reviews": 760,
+    "calories": 550,
+    "total_mins": 11,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+7",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "8",
+    "title": "Delicious Recipe 8",
+    "ingredients": [
+      "Yogurt",
+      "Broccoli",
+      "Dill",
+      "Cucumber",
+      "Tortillas",
+      "Butter"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.7,
+    "reviews": 748,
+    "calories": 659,
+    "total_mins": 13,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+8",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "9",
+    "title": "Delicious Recipe 9",
+    "ingredients": [
+      "Salt",
+      "Sugar",
+      "Chicken breast",
+      "Olive oil",
+      "Flour",
+      "Dill",
+      "Tomatoes",
+      "Tortillas"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.4,
+    "reviews": 476,
+    "calories": 262,
+    "total_mins": 88,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+9",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "10",
+    "title": "Delicious Recipe 10",
+    "ingredients": [
+      "White fish",
+      "Mushroom",
+      "Pasta",
+      "Cherry Tomatoes",
+      "Tortillas",
+      "Chicken",
+      "Mushrooms",
+      "Tortillas",
+      "Lettuce",
+      "Dill"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 3.3,
+    "reviews": 983,
+    "calories": 235,
+    "total_mins": 42,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+10",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "11",
+    "title": "Delicious Recipe 11",
+    "ingredients": [
+      "Chicken",
+      "Avocado",
+      "Carrot",
+      "Cream",
+      "Chocolate chips",
+      "Fish",
+      "Egg",
+      "Cabbage"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.1,
+    "reviews": 487,
+    "calories": 422,
+    "total_mins": 47,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+11",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "12",
+    "title": "Delicious Recipe 12",
+    "ingredients": [
+      "Pepper",
+      "Zucchini",
+      "Flour",
+      "Cucumber",
+      "Asparagus",
+      "Carrots"
+    ],
+    "category": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 4.5,
+    "reviews": 332,
+    "calories": 318,
+    "total_mins": 78,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+12",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "13",
+    "title": "Delicious Recipe 13",
+    "ingredients": [
+      "Broccoli",
+      "Bell peppers",
+      "Salmon fillet",
+      "Bell Pepper",
+      "Bread",
+      "Cherry Tomatoes",
+      "Vanilla extract",
+      "Butter"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 4,
+    "reviews": 154,
+    "calories": 805,
+    "total_mins": 80,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+13",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "14",
+    "title": "Delicious Recipe 14",
+    "ingredients": [
+      "Lettuce",
+      "White fish",
+      "Cream",
+      "Butter",
+      "Cabbage slaw",
+      "Beef strips"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegan"
+    ],
+    "ratings": 3.1,
+    "reviews": 898,
+    "calories": 306,
+    "total_mins": 23,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+14",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "15",
+    "title": "Delicious Recipe 15",
+    "ingredients": [
+      "White fish",
+      "Ginger",
+      "Butter",
+      "Mushroom",
+      "Paprika",
+      "Chocolate chips",
+      "Egg",
+      "Cream",
+      "Carrots"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.6,
+    "reviews": 309,
+    "calories": 817,
+    "total_mins": 55,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+15",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "16",
+    "title": "Delicious Recipe 16",
+    "ingredients": [
+      "Pasta",
+      "Lettuce",
+      "Dill",
+      "Salt",
+      "Flour",
+      "Cherry Tomatoes",
+      "Pork"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.6,
+    "reviews": 145,
+    "calories": 693,
+    "total_mins": 40,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+16",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "17",
+    "title": "Delicious Recipe 17",
+    "ingredients": [
+      "Ginger",
+      "Asparagus",
+      "Chocolate chips",
+      "Chicken breast",
+      "Egg",
+      "Chocolate chips",
+      "Lettuce",
+      "Avocado",
+      "Olive oil"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 422,
+    "calories": 860,
+    "total_mins": 39,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+17",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "18",
+    "title": "Delicious Recipe 18",
+    "ingredients": [
+      "Parmesan",
+      "Pork",
+      "Tortillas",
+      "Carrots",
+      "Tomato"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegan"
+    ],
+    "ratings": 3.4,
+    "reviews": 966,
+    "calories": 404,
+    "total_mins": 65,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+18",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "19",
+    "title": "Delicious Recipe 19",
+    "ingredients": [
+      "Sugar",
+      "Salmon fillet",
+      "Pepper",
+      "Chocolate chips",
+      "Paprika",
+      "Pork",
+      "Butter",
+      "Sugar"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.2,
+    "reviews": 372,
+    "calories": 872,
+    "total_mins": 50,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+19",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "20",
+    "title": "Delicious Recipe 20",
+    "ingredients": [
+      "Egg",
+      "Asparagus",
+      "Lamb",
+      "Lettuce",
+      "Oregano",
+      "Cheese",
+      "Beef strips",
+      "Cream"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 4.9,
+    "reviews": 675,
+    "calories": 373,
+    "total_mins": 73,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+20",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "21",
+    "title": "Delicious Recipe 21",
+    "ingredients": [
+      "Beef",
+      "Chocolate chips",
+      "Bell Pepper",
+      "Cheese",
+      "Cabbage slaw",
+      "Cherry Tomatoes",
+      "Beef strips",
+      "Basil",
+      "Herbs"
+    ],
+    "category": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 4.1,
+    "reviews": 911,
+    "calories": 710,
+    "total_mins": 46,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+21",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "22",
+    "title": "Delicious Recipe 22",
+    "ingredients": [
+      "Parmesan",
+      "Olive oil",
+      "Cheese",
+      "Lettuce",
+      "Cherry tomatoes"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegan"
+    ],
+    "ratings": 4.8,
+    "reviews": 208,
+    "calories": 235,
+    "total_mins": 85,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+22",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "23",
+    "title": "Delicious Recipe 23",
+    "ingredients": [
+      "Cabbage",
+      "Chocolate chips",
+      "Yogurt",
+      "Flour",
+      "Pasta",
+      "Cabbage slaw",
+      "Beef",
+      "Salmon fillet"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 4,
+    "reviews": 128,
+    "calories": 591,
+    "total_mins": 12,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+23",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "24",
+    "title": "Delicious Recipe 24",
+    "ingredients": [
+      "Salt",
+      "Carrots",
+      "Turkey",
+      "Vanilla extract",
+      "Chocolate chips"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.4,
+    "reviews": 72,
+    "calories": 440,
+    "total_mins": 62,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+24",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "25",
+    "title": "Delicious Recipe 25",
+    "ingredients": [
+      "Cream",
+      "Herbs",
+      "Broccoli",
+      "Avocado",
+      "Salmon fillet",
+      "Lime"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 3.3,
+    "reviews": 31,
+    "calories": 762,
+    "total_mins": 54,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+25",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "26",
+    "title": "Delicious Recipe 26",
+    "ingredients": [
+      "Garlic",
+      "Chicken breast",
+      "Ginger",
+      "Cherry tomatoes",
+      "Pork",
+      "Beef strips",
+      "Soy sauce",
+      "Butter",
+      "Onion"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.1,
+    "reviews": 330,
+    "calories": 814,
+    "total_mins": 82,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+26",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "27",
+    "title": "Delicious Recipe 27",
+    "ingredients": [
+      "Rice",
+      "Tortillas",
+      "Spinach",
+      "Lemon",
+      "Lime"
+    ],
+    "category": [
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ratings": 4.5,
+    "reviews": 377,
+    "calories": 480,
+    "total_mins": 75,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+27",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "28",
+    "title": "Delicious Recipe 28",
+    "ingredients": [
+      "Potato",
+      "Bread",
+      "Carrot",
+      "Broccoli",
+      "Cheese",
+      "Vanilla extract",
+      "Lime"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 3.8,
+    "reviews": 542,
+    "calories": 219,
+    "total_mins": 28,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+28",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "29",
+    "title": "Delicious Recipe 29",
+    "ingredients": [
+      "Flour",
+      "Dill",
+      "Beef",
+      "Soy sauce",
+      "Salmon fillet",
+      "Asparagus"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 4.6,
+    "reviews": 792,
+    "calories": 240,
+    "total_mins": 73,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+29",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "30",
+    "title": "Delicious Recipe 30",
+    "ingredients": [
+      "Basil",
+      "Onion",
+      "Vanilla extract",
+      "Pepper",
+      "Sugar",
+      "Butter",
+      "Cheese"
+    ],
+    "category": [
+      "Keto",
+      "Low-Carb"
+    ],
+    "ratings": 3.9,
+    "reviews": 112,
+    "calories": 531,
+    "total_mins": 24,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+30",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "31",
+    "title": "Delicious Recipe 31",
+    "ingredients": [
+      "Lettuce",
+      "Salmon fillet",
+      "Butter",
+      "Tomatoes",
+      "Bread",
+      "Chocolate chips",
+      "Pepper",
+      "Carrot"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Low-Carb"
+    ],
+    "ratings": 4.6,
+    "reviews": 46,
+    "calories": 515,
+    "total_mins": 46,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+31",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "32",
+    "title": "Delicious Recipe 32",
+    "ingredients": [
+      "Carrot",
+      "Avocado",
+      "Chocolate chips",
+      "Salmon fillet",
+      "Asparagus",
+      "Olive oil",
+      "Garlic"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "ratings": 3.4,
+    "reviews": 226,
+    "calories": 662,
+    "total_mins": 88,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+32",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "33",
+    "title": "Delicious Recipe 33",
+    "ingredients": [
+      "Garlic",
+      "Cucumber",
+      "Bell peppers",
+      "Cucumber",
+      "Bell Pepper"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.4,
+    "reviews": 927,
+    "calories": 525,
+    "total_mins": 87,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+33",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "34",
+    "title": "Delicious Recipe 34",
+    "ingredients": [
+      "Cumin",
+      "Zucchini",
+      "Lettuce",
+      "Soy sauce",
+      "Beef",
+      "Sugar",
+      "Chicken",
+      "Fish",
+      "Bell Pepper"
+    ],
+    "category": [
+      "Keto",
+      "Vegetarian"
+    ],
+    "ratings": 4.7,
+    "reviews": 706,
+    "calories": 762,
+    "total_mins": 65,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+34",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "35",
+    "title": "Delicious Recipe 35",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Tortillas",
+      "Lettuce",
+      "Fish",
+      "Cabbage slaw",
+      "Turkey",
+      "White fish",
+      "Rice"
+    ],
+    "category": [
+      "Vegetarian",
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.7,
+    "reviews": 69,
+    "calories": 266,
+    "total_mins": 67,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+35",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "36",
+    "title": "Delicious Recipe 36",
+    "ingredients": [
+      "Rice",
+      "Cucumber",
+      "Lamb",
+      "Yogurt",
+      "Onion"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.6,
+    "reviews": 766,
+    "calories": 467,
+    "total_mins": 20,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+36",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "37",
+    "title": "Delicious Recipe 37",
+    "ingredients": [
+      "Lemon",
+      "Butter",
+      "Cucumber",
+      "Garlic",
+      "Pork",
+      "Butter",
+      "Pepper",
+      "Egg",
+      "Oregano",
+      "Spinach"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.1,
+    "reviews": 550,
+    "calories": 754,
+    "total_mins": 72,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+37",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "38",
+    "title": "Delicious Recipe 38",
+    "ingredients": [
+      "Cucumber",
+      "Tomatoes",
+      "Cheese",
+      "Vanilla extract",
+      "Lettuce",
+      "Chicken breast",
+      "Cabbage",
+      "Zucchini",
+      "Carrot"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.3,
+    "reviews": 262,
+    "calories": 849,
+    "total_mins": 43,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+38",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "39",
+    "title": "Delicious Recipe 39",
+    "ingredients": [
+      "Lettuce",
+      "Broccoli",
+      "Soy sauce",
+      "Chicken breast",
+      "Cheese",
+      "Tortillas",
+      "Ginger"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 3.1,
+    "reviews": 781,
+    "calories": 491,
+    "total_mins": 31,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+39",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "40",
+    "title": "Delicious Recipe 40",
+    "ingredients": [
+      "Cream",
+      "Ginger",
+      "Carrots",
+      "Onion",
+      "Bell Pepper",
+      "Lamb",
+      "Olive oil",
+      "Cucumber"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 3.9,
+    "reviews": 642,
+    "calories": 729,
+    "total_mins": 28,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+40",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "41",
+    "title": "Delicious Recipe 41",
+    "ingredients": [
+      "Carrots",
+      "Mushrooms",
+      "Onion",
+      "Zucchini",
+      "Beef strips",
+      "Sugar",
+      "Lemon"
+    ],
+    "category": [
+      "Keto",
+      "Vegetarian"
+    ],
+    "ratings": 4.7,
+    "reviews": 962,
+    "calories": 883,
+    "total_mins": 36,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+41",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "42",
+    "title": "Delicious Recipe 42",
+    "ingredients": [
+      "Broccoli",
+      "Cucumber",
+      "Pork",
+      "Pasta",
+      "Onion",
+      "Dill",
+      "Salmon fillet",
+      "Vanilla extract",
+      "Paprika"
+    ],
+    "category": [
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "ratings": 4.4,
+    "reviews": 54,
+    "calories": 387,
+    "total_mins": 26,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+42",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "43",
+    "title": "Delicious Recipe 43",
+    "ingredients": [
+      "Avocado",
+      "Asparagus",
+      "Ginger",
+      "Lemon",
+      "Chicken",
+      "Carrot",
+      "Tomatoes"
+    ],
+    "category": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 3.2,
+    "reviews": 98,
+    "calories": 235,
+    "total_mins": 74,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+43",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "44",
+    "title": "Delicious Recipe 44",
+    "ingredients": [
+      "Salt",
+      "Spinach",
+      "Vanilla extract",
+      "Carrot",
+      "Ginger",
+      "Cucumber",
+      "Sugar",
+      "Garlic",
+      "Chicken",
+      "Basil"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 4.7,
+    "reviews": 105,
+    "calories": 823,
+    "total_mins": 16,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+44",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "45",
+    "title": "Delicious Recipe 45",
+    "ingredients": [
+      "Asparagus",
+      "White fish",
+      "Cabbage",
+      "Basil",
+      "Chicken breast",
+      "Carrot",
+      "Chocolate chips",
+      "Cucumber"
+    ],
+    "category": [
+      "Vegan",
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.1,
+    "reviews": 401,
+    "calories": 717,
+    "total_mins": 30,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+45",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "46",
+    "title": "Delicious Recipe 46",
+    "ingredients": [
+      "Beef strips",
+      "Sugar",
+      "Pepper",
+      "Garlic",
+      "Turkey",
+      "Asparagus",
+      "Parmesan",
+      "Cherry tomatoes",
+      "Tortillas",
+      "Spinach"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Keto"
+    ],
+    "ratings": 4.5,
+    "reviews": 846,
+    "calories": 742,
+    "total_mins": 14,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+46",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "47",
+    "title": "Delicious Recipe 47",
+    "ingredients": [
+      "Asparagus",
+      "Lemon",
+      "Cherry Tomatoes",
+      "Dill",
+      "Chicken",
+      "Mushroom",
+      "Lettuce",
+      "Sugar",
+      "Potato",
+      "Olive oil"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.2,
+    "reviews": 542,
+    "calories": 415,
+    "total_mins": 35,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+47",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "48",
+    "title": "Delicious Recipe 48",
+    "ingredients": [
+      "Milk",
+      "Mushroom",
+      "Avocado",
+      "Dill",
+      "Zucchini",
+      "Butter",
+      "Cream"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.9,
+    "reviews": 830,
+    "calories": 311,
+    "total_mins": 53,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+48",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "49",
+    "title": "Delicious Recipe 49",
+    "ingredients": [
+      "Milk",
+      "Fish",
+      "Parmesan",
+      "Flour",
+      "Avocado",
+      "Dill"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.5,
+    "reviews": 451,
+    "calories": 424,
+    "total_mins": 50,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+49",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "50",
+    "title": "Delicious Recipe 50",
+    "ingredients": [
+      "Dill",
+      "Broccoli",
+      "Cumin",
+      "Cheese",
+      "Flour"
+    ],
+    "category": [
+      "Low-Carb",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.9,
+    "reviews": 665,
+    "calories": 373,
+    "total_mins": 23,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+50",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "51",
+    "title": "Delicious Recipe 51",
+    "ingredients": [
+      "Beef",
+      "Carrot",
+      "Chocolate chips",
+      "Potato",
+      "Turkey",
+      "Garlic",
+      "Herbs"
+    ],
+    "category": [
+      "Keto",
+      "Vegetarian"
+    ],
+    "ratings": 3.3,
+    "reviews": 604,
+    "calories": 613,
+    "total_mins": 11,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+51",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "52",
+    "title": "Delicious Recipe 52",
+    "ingredients": [
+      "Carrots",
+      "Onion",
+      "Chocolate chips",
+      "Chicken breast",
+      "Parmesan",
+      "Milk",
+      "Flour",
+      "Lime",
+      "Ginger",
+      "Pork"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.7,
+    "reviews": 314,
+    "calories": 386,
+    "total_mins": 53,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+52",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "53",
+    "title": "Delicious Recipe 53",
+    "ingredients": [
+      "Avocado",
+      "Sugar",
+      "Broccoli",
+      "Egg",
+      "Pork",
+      "Chocolate chips",
+      "Butter"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 4.7,
+    "reviews": 378,
+    "calories": 888,
+    "total_mins": 26,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+53",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "54",
+    "title": "Delicious Recipe 54",
+    "ingredients": [
+      "Lamb",
+      "Flour",
+      "Cucumber",
+      "Soy sauce",
+      "Parmesan",
+      "Paprika",
+      "Butter",
+      "Beef"
+    ],
+    "category": [
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ratings": 4.1,
+    "reviews": 395,
+    "calories": 883,
+    "total_mins": 87,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+54",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "55",
+    "title": "Delicious Recipe 55",
+    "ingredients": [
+      "Spinach",
+      "Beef strips",
+      "Chocolate chips",
+      "Chicken breast",
+      "Cream",
+      "Dill",
+      "Garlic",
+      "Lime",
+      "Oregano",
+      "Mushrooms"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.3,
+    "reviews": 747,
+    "calories": 317,
+    "total_mins": 88,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+55",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "56",
+    "title": "Delicious Recipe 56",
+    "ingredients": [
+      "Cucumber",
+      "Bell peppers",
+      "Lettuce",
+      "Dill",
+      "Cabbage slaw",
+      "Potato",
+      "Avocado",
+      "Soy sauce"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.1,
+    "reviews": 737,
+    "calories": 714,
+    "total_mins": 76,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+56",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "57",
+    "title": "Delicious Recipe 57",
+    "ingredients": [
+      "Pork",
+      "Zucchini",
+      "Lettuce",
+      "Asparagus",
+      "Oregano",
+      "Flour"
+    ],
+    "category": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "ratings": 4.9,
+    "reviews": 767,
+    "calories": 896,
+    "total_mins": 63,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+57",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "58",
+    "title": "Delicious Recipe 58",
+    "ingredients": [
+      "Pepper",
+      "Mushrooms",
+      "Flour",
+      "Salmon fillet",
+      "Cucumber",
+      "Chocolate chips",
+      "Cherry tomatoes"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.8,
+    "reviews": 103,
+    "calories": 592,
+    "total_mins": 52,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+58",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "59",
+    "title": "Delicious Recipe 59",
+    "ingredients": [
+      "Lettuce",
+      "Pepper",
+      "Basil",
+      "Cabbage",
+      "Herbs",
+      "Lamb"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.6,
+    "reviews": 359,
+    "calories": 203,
+    "total_mins": 37,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+59",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "60",
+    "title": "Delicious Recipe 60",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Dill",
+      "Herbs",
+      "Cherry Tomatoes",
+      "Cabbage",
+      "Asparagus",
+      "Bell peppers"
+    ],
+    "category": [
+      "Vegetarian",
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 897,
+    "calories": 207,
+    "total_mins": 74,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+60",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "61",
+    "title": "Delicious Recipe 61",
+    "ingredients": [
+      "Mushrooms",
+      "Broccoli",
+      "Paprika",
+      "Chocolate chips",
+      "Butter",
+      "Vanilla extract",
+      "Cream",
+      "Dill",
+      "Sugar"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 4.9,
+    "reviews": 49,
+    "calories": 620,
+    "total_mins": 77,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+61",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "62",
+    "title": "Delicious Recipe 62",
+    "ingredients": [
+      "Bread",
+      "Dill",
+      "Soy sauce",
+      "Bell peppers",
+      "Ginger",
+      "Parmesan",
+      "Milk",
+      "Broccoli"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.7,
+    "reviews": 579,
+    "calories": 276,
+    "total_mins": 58,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+62",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "63",
+    "title": "Delicious Recipe 63",
+    "ingredients": [
+      "Zucchini",
+      "Salmon fillet",
+      "Zucchini",
+      "Tomato",
+      "Cabbage slaw",
+      "Pork",
+      "Carrots",
+      "Olive oil",
+      "Cream",
+      "Salt"
+    ],
+    "category": [
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ratings": 5,
+    "reviews": 41,
+    "calories": 627,
+    "total_mins": 13,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+63",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "64",
+    "title": "Delicious Recipe 64",
+    "ingredients": [
+      "Parmesan",
+      "Rice",
+      "Cream",
+      "Vanilla extract",
+      "Olive oil"
+    ],
+    "category": [
+      "Vegetarian",
+      "Low-Carb"
+    ],
+    "ratings": 4.7,
+    "reviews": 136,
+    "calories": 548,
+    "total_mins": 89,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+64",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "65",
+    "title": "Delicious Recipe 65",
+    "ingredients": [
+      "Cabbage slaw",
+      "Onion",
+      "Garlic",
+      "Garlic",
+      "Olive oil"
+    ],
+    "category": [
+      "Vegetarian",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.6,
+    "reviews": 220,
+    "calories": 816,
+    "total_mins": 14,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+65",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "66",
+    "title": "Delicious Recipe 66",
+    "ingredients": [
+      "Cream",
+      "Chicken breast",
+      "Bell peppers",
+      "Butter",
+      "Beef"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4,
+    "reviews": 77,
+    "calories": 536,
+    "total_mins": 21,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+66",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "67",
+    "title": "Delicious Recipe 67",
+    "ingredients": [
+      "Lemon",
+      "Dill",
+      "Dill",
+      "Oregano",
+      "Flour",
+      "Flour",
+      "Lamb",
+      "Pasta",
+      "Cheese",
+      "Ginger"
+    ],
+    "category": [
+      "Keto",
+      "Low-Carb"
+    ],
+    "ratings": 3.8,
+    "reviews": 62,
+    "calories": 597,
+    "total_mins": 12,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+67",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "68",
+    "title": "Delicious Recipe 68",
+    "ingredients": [
+      "Herbs",
+      "Chicken",
+      "Butter",
+      "Onion",
+      "Egg",
+      "Cabbage",
+      "Cucumber",
+      "Asparagus",
+      "Olive oil"
+    ],
+    "category": [
+      "Vegan",
+      "Keto"
+    ],
+    "ratings": 3.4,
+    "reviews": 290,
+    "calories": 286,
+    "total_mins": 89,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+68",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "69",
+    "title": "Delicious Recipe 69",
+    "ingredients": [
+      "Lemon",
+      "Olive oil",
+      "Spinach",
+      "Butter",
+      "Pasta",
+      "Butter",
+      "Basil"
+    ],
+    "category": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 3.9,
+    "reviews": 647,
+    "calories": 377,
+    "total_mins": 52,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+69",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "70",
+    "title": "Delicious Recipe 70",
+    "ingredients": [
+      "Tomatoes",
+      "Lime",
+      "Tomato",
+      "Salmon fillet",
+      "Garlic"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 36,
+    "calories": 352,
+    "total_mins": 59,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+70",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "71",
+    "title": "Delicious Recipe 71",
+    "ingredients": [
+      "Soy sauce",
+      "Lettuce",
+      "Carrots",
+      "Dill",
+      "Tomato"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Keto"
+    ],
+    "ratings": 3.8,
+    "reviews": 834,
+    "calories": 834,
+    "total_mins": 72,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+71",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "72",
+    "title": "Delicious Recipe 72",
+    "ingredients": [
+      "Cream",
+      "Chicken",
+      "Sugar",
+      "Ginger",
+      "Butter",
+      "Cream",
+      "Carrots",
+      "Cabbage slaw",
+      "Dill",
+      "Pasta"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 4.3,
+    "reviews": 480,
+    "calories": 501,
+    "total_mins": 29,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+72",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "73",
+    "title": "Delicious Recipe 73",
+    "ingredients": [
+      "Salmon fillet",
+      "Asparagus",
+      "Zucchini",
+      "Pasta",
+      "Asparagus",
+      "Garlic"
+    ],
+    "category": [
+      "Vegan",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.3,
+    "reviews": 727,
+    "calories": 764,
+    "total_mins": 55,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+73",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "74",
+    "title": "Delicious Recipe 74",
+    "ingredients": [
+      "Potato",
+      "Soy sauce",
+      "Lettuce",
+      "Lettuce",
+      "Pepper",
+      "Garlic",
+      "Butter",
+      "Garlic",
+      "Butter",
+      "Tomato"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.7,
+    "reviews": 847,
+    "calories": 569,
+    "total_mins": 40,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+74",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "75",
+    "title": "Delicious Recipe 75",
+    "ingredients": [
+      "Chocolate chips",
+      "Bell peppers",
+      "Beef",
+      "Lettuce",
+      "Lamb",
+      "Cabbage slaw"
+    ],
+    "category": [
+      "Vegan",
+      "Low-Carb"
+    ],
+    "ratings": 3.8,
+    "reviews": 686,
+    "calories": 488,
+    "total_mins": 39,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+75",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "76",
+    "title": "Delicious Recipe 76",
+    "ingredients": [
+      "Soy sauce",
+      "Cream",
+      "Mushrooms",
+      "Cherry Tomatoes",
+      "Broccoli"
+    ],
+    "category": [
+      "Vegan",
+      "Low-Carb"
+    ],
+    "ratings": 4.2,
+    "reviews": 29,
+    "calories": 588,
+    "total_mins": 25,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+76",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "77",
+    "title": "Delicious Recipe 77",
+    "ingredients": [
+      "Turkey",
+      "Egg",
+      "Flour",
+      "Basil",
+      "Beef strips",
+      "Ginger",
+      "Mushrooms",
+      "Spinach",
+      "Salt",
+      "Bread"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.4,
+    "reviews": 864,
+    "calories": 241,
+    "total_mins": 90,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+77",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "78",
+    "title": "Delicious Recipe 78",
+    "ingredients": [
+      "Milk",
+      "Fish",
+      "Carrots",
+      "Olive oil",
+      "Cherry tomatoes",
+      "Beef strips",
+      "Chicken"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.6,
+    "reviews": 973,
+    "calories": 427,
+    "total_mins": 76,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+78",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "79",
+    "title": "Delicious Recipe 79",
+    "ingredients": [
+      "Lime",
+      "Zucchini",
+      "Bread",
+      "Spinach",
+      "Cream",
+      "Herbs",
+      "Milk"
+    ],
+    "category": [
+      "Low-Carb",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3,
+    "reviews": 69,
+    "calories": 507,
+    "total_mins": 43,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+79",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "80",
+    "title": "Delicious Recipe 80",
+    "ingredients": [
+      "Oregano",
+      "Spinach",
+      "Bell Pepper",
+      "Lettuce",
+      "Carrots",
+      "Cherry Tomatoes",
+      "Basil",
+      "Chocolate chips"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 3.2,
+    "reviews": 570,
+    "calories": 388,
+    "total_mins": 82,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+80",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "81",
+    "title": "Delicious Recipe 81",
+    "ingredients": [
+      "Potato",
+      "Tortillas",
+      "Onion",
+      "Soy sauce",
+      "Asparagus",
+      "Pasta",
+      "Egg",
+      "Broccoli",
+      "Lettuce",
+      "Chocolate chips"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.3,
+    "reviews": 85,
+    "calories": 797,
+    "total_mins": 11,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+81",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "82",
+    "title": "Delicious Recipe 82",
+    "ingredients": [
+      "Soy sauce",
+      "Chicken",
+      "Lemon",
+      "Dill",
+      "Beef",
+      "Basil",
+      "Fish",
+      "Mushrooms",
+      "Soy sauce"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.8,
+    "reviews": 963,
+    "calories": 524,
+    "total_mins": 78,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+82",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "83",
+    "title": "Delicious Recipe 83",
+    "ingredients": [
+      "Cherry Tomatoes",
+      "Cheese",
+      "Garlic",
+      "White fish",
+      "Parmesan",
+      "Chicken",
+      "Flour"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegetarian"
+    ],
+    "ratings": 3.3,
+    "reviews": 33,
+    "calories": 425,
+    "total_mins": 35,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+83",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "84",
+    "title": "Delicious Recipe 84",
+    "ingredients": [
+      "Cream",
+      "Ginger",
+      "Onion",
+      "White fish",
+      "Rice",
+      "Flour",
+      "Zucchini",
+      "Pasta",
+      "Cherry tomatoes"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegan"
+    ],
+    "ratings": 3.1,
+    "reviews": 131,
+    "calories": 623,
+    "total_mins": 86,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+84",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "85",
+    "title": "Delicious Recipe 85",
+    "ingredients": [
+      "Cucumber",
+      "Lettuce",
+      "Bell peppers",
+      "Vanilla extract",
+      "Soy sauce",
+      "Salmon fillet",
+      "Sugar",
+      "Cabbage slaw",
+      "Cherry Tomatoes",
+      "Cabbage"
+    ],
+    "category": [
+      "Keto",
+      "Vegan"
+    ],
+    "ratings": 3.7,
+    "reviews": 256,
+    "calories": 237,
+    "total_mins": 61,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+85",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "86",
+    "title": "Delicious Recipe 86",
+    "ingredients": [
+      "Tomatoes",
+      "Ginger",
+      "Pepper",
+      "Paprika",
+      "Butter",
+      "Cabbage slaw"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.3,
+    "reviews": 290,
+    "calories": 481,
+    "total_mins": 36,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+86",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "87",
+    "title": "Delicious Recipe 87",
+    "ingredients": [
+      "Cherry tomatoes",
+      "Broccoli",
+      "Beef strips",
+      "Broccoli",
+      "Lemon",
+      "Bell peppers",
+      "Tomatoes",
+      "Potato"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.6,
+    "reviews": 217,
+    "calories": 217,
+    "total_mins": 66,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+87",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "88",
+    "title": "Delicious Recipe 88",
+    "ingredients": [
+      "White fish",
+      "Pork",
+      "Cheese",
+      "Flour",
+      "Cumin",
+      "Salmon fillet"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegan"
+    ],
+    "ratings": 3.4,
+    "reviews": 100,
+    "calories": 792,
+    "total_mins": 45,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+88",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "89",
+    "title": "Delicious Recipe 89",
+    "ingredients": [
+      "Asparagus",
+      "Rice",
+      "Asparagus",
+      "Onion",
+      "Olive oil",
+      "Beef",
+      "Herbs",
+      "Chicken breast"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Non-Vegetarian"
+    ],
+    "ratings": 4,
+    "reviews": 607,
+    "calories": 555,
+    "total_mins": 59,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+89",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "90",
+    "title": "Delicious Recipe 90",
+    "ingredients": [
+      "Fish",
+      "Tortillas",
+      "Lettuce",
+      "Carrots",
+      "Broccoli",
+      "Mushroom",
+      "Rice",
+      "Pepper",
+      "White fish"
+    ],
+    "category": [
+      "Vegan",
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.3,
+    "reviews": 558,
+    "calories": 777,
+    "total_mins": 85,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+90",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "91",
+    "title": "Delicious Recipe 91",
+    "ingredients": [
+      "Olive oil",
+      "Chicken",
+      "Turkey",
+      "Lamb",
+      "Mushroom",
+      "Potato",
+      "Cabbage slaw"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.4,
+    "reviews": 324,
+    "calories": 662,
+    "total_mins": 41,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+91",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "92",
+    "title": "Delicious Recipe 92",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Cumin",
+      "Lettuce",
+      "Mushrooms",
+      "Chicken breast",
+      "Chocolate chips",
+      "Carrots",
+      "Asparagus"
+    ],
+    "category": [
+      "Keto",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.6,
+    "reviews": 594,
+    "calories": 284,
+    "total_mins": 36,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+92",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "93",
+    "title": "Delicious Recipe 93",
+    "ingredients": [
+      "Avocado",
+      "Potato",
+      "White fish",
+      "Lettuce",
+      "Beef strips",
+      "Dill",
+      "Tomato"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 4.9,
+    "reviews": 649,
+    "calories": 208,
+    "total_mins": 36,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+93",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "94",
+    "title": "Delicious Recipe 94",
+    "ingredients": [
+      "Dill",
+      "Bread",
+      "Cumin",
+      "Cabbage slaw",
+      "Cheese",
+      "Onion"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.3,
+    "reviews": 452,
+    "calories": 221,
+    "total_mins": 88,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+94",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "95",
+    "title": "Delicious Recipe 95",
+    "ingredients": [
+      "Beef strips",
+      "Olive oil",
+      "Chocolate chips",
+      "Ginger",
+      "Chicken",
+      "Flour",
+      "Dill"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.5,
+    "reviews": 341,
+    "calories": 442,
+    "total_mins": 78,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+95",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "96",
+    "title": "Delicious Recipe 96",
+    "ingredients": [
+      "Cabbage",
+      "Rice",
+      "Sugar",
+      "Basil",
+      "Lime",
+      "Sugar"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.4,
+    "reviews": 950,
+    "calories": 536,
+    "total_mins": 52,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+96",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "97",
+    "title": "Delicious Recipe 97",
+    "ingredients": [
+      "Ginger",
+      "Fish",
+      "Pasta",
+      "Milk",
+      "Herbs",
+      "Broccoli",
+      "Bell peppers",
+      "Chicken",
+      "Garlic"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.3,
+    "reviews": 297,
+    "calories": 719,
+    "total_mins": 69,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+97",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "98",
+    "title": "Delicious Recipe 98",
+    "ingredients": [
+      "Salt",
+      "Lettuce",
+      "Cherry tomatoes",
+      "Spinach",
+      "Carrot",
+      "Potato",
+      "Tomatoes"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 179,
+    "calories": 776,
+    "total_mins": 76,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+98",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "99",
+    "title": "Delicious Recipe 99",
+    "ingredients": [
+      "Cheese",
+      "Parmesan",
+      "Vanilla extract",
+      "Lettuce",
+      "Lamb",
+      "Flour"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.5,
+    "reviews": 252,
+    "calories": 603,
+    "total_mins": 58,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+99",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "100",
+    "title": "Delicious Recipe 100",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Cucumber",
+      "Paprika",
+      "Cream"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.2,
+    "reviews": 473,
+    "calories": 362,
+    "total_mins": 51,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+100",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "101",
+    "title": "Delicious Recipe 101",
+    "ingredients": [
+      "Beef",
+      "Cherry tomatoes",
+      "Cucumber",
+      "Salmon fillet",
+      "Parmesan",
+      "Tomatoes"
+    ],
+    "category": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 3.7,
+    "reviews": 510,
+    "calories": 710,
+    "total_mins": 11,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+101",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "102",
+    "title": "Delicious Recipe 102",
+    "ingredients": [
+      "Garlic",
+      "Mushrooms",
+      "Herbs",
+      "Soy sauce",
+      "Oregano",
+      "Lemon",
+      "Spinach",
+      "Lamb",
+      "Cream"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegan"
+    ],
+    "ratings": 3.9,
+    "reviews": 241,
+    "calories": 731,
+    "total_mins": 28,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+102",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "103",
+    "title": "Delicious Recipe 103",
+    "ingredients": [
+      "Lime",
+      "Vanilla extract",
+      "Cherry tomatoes",
+      "Cabbage slaw",
+      "Salmon fillet",
+      "Cherry Tomatoes",
+      "Mushrooms",
+      "Onion"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.6,
+    "reviews": 844,
+    "calories": 368,
+    "total_mins": 66,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+103",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "104",
+    "title": "Delicious Recipe 104",
+    "ingredients": [
+      "Garlic",
+      "Oregano",
+      "Paprika",
+      "Milk",
+      "Cherry Tomatoes",
+      "Mushrooms",
+      "Cucumber",
+      "Cherry tomatoes"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegetarian"
+    ],
+    "ratings": 3.7,
+    "reviews": 589,
+    "calories": 372,
+    "total_mins": 55,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+104",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "105",
+    "title": "Delicious Recipe 105",
+    "ingredients": [
+      "Ginger",
+      "Parmesan",
+      "Ginger",
+      "Milk",
+      "Mushroom",
+      "Broccoli"
+    ],
+    "category": [
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "ratings": 4.1,
+    "reviews": 625,
+    "calories": 211,
+    "total_mins": 37,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+105",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "106",
+    "title": "Delicious Recipe 106",
+    "ingredients": [
+      "Zucchini",
+      "White fish",
+      "Lime",
+      "Asparagus",
+      "Chocolate chips",
+      "Cream",
+      "Yogurt",
+      "Chicken breast",
+      "Ginger"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.5,
+    "reviews": 389,
+    "calories": 444,
+    "total_mins": 30,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+106",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "107",
+    "title": "Delicious Recipe 107",
+    "ingredients": [
+      "Beef",
+      "Tortillas",
+      "Chocolate chips",
+      "Vanilla extract",
+      "White fish"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 4.7,
+    "reviews": 114,
+    "calories": 525,
+    "total_mins": 90,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+107",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "108",
+    "title": "Delicious Recipe 108",
+    "ingredients": [
+      "Cucumber",
+      "Garlic",
+      "Basil",
+      "Dill",
+      "Cream",
+      "Oregano",
+      "Lettuce",
+      "Cherry tomatoes"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.4,
+    "reviews": 980,
+    "calories": 718,
+    "total_mins": 40,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+108",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "109",
+    "title": "Delicious Recipe 109",
+    "ingredients": [
+      "Pork",
+      "Pepper",
+      "Rice",
+      "Carrots",
+      "Mushrooms",
+      "Salmon fillet",
+      "Soy sauce",
+      "Potato"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.9,
+    "reviews": 565,
+    "calories": 672,
+    "total_mins": 63,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+109",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "110",
+    "title": "Delicious Recipe 110",
+    "ingredients": [
+      "Bell Pepper",
+      "Oregano",
+      "White fish",
+      "Tortillas",
+      "Chicken",
+      "Sugar",
+      "Tortillas"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.1,
+    "reviews": 888,
+    "calories": 742,
+    "total_mins": 88,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+110",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "111",
+    "title": "Delicious Recipe 111",
+    "ingredients": [
+      "Chocolate chips",
+      "Soy sauce",
+      "Avocado",
+      "Ginger",
+      "Tomato",
+      "Milk"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Keto"
+    ],
+    "ratings": 4.9,
+    "reviews": 914,
+    "calories": 720,
+    "total_mins": 27,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+111",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "112",
+    "title": "Delicious Recipe 112",
+    "ingredients": [
+      "Salmon fillet",
+      "Cumin",
+      "Fish",
+      "Lemon",
+      "Yogurt",
+      "Avocado",
+      "Dill",
+      "Dill"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 5,
+    "reviews": 74,
+    "calories": 618,
+    "total_mins": 79,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+112",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "113",
+    "title": "Delicious Recipe 113",
+    "ingredients": [
+      "Herbs",
+      "Asparagus",
+      "Lettuce",
+      "Cream",
+      "Butter",
+      "Dill"
+    ],
+    "category": [
+      "Keto",
+      "Vegetarian"
+    ],
+    "ratings": 4.5,
+    "reviews": 430,
+    "calories": 552,
+    "total_mins": 13,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+113",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "114",
+    "title": "Delicious Recipe 114",
+    "ingredients": [
+      "Cucumber",
+      "Chocolate chips",
+      "White fish",
+      "Ginger",
+      "Butter",
+      "Pork",
+      "Avocado",
+      "Onion",
+      "Cherry Tomatoes"
+    ],
+    "category": [
+      "Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 4.4,
+    "reviews": 88,
+    "calories": 289,
+    "total_mins": 83,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+114",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "115",
+    "title": "Delicious Recipe 115",
+    "ingredients": [
+      "Paprika",
+      "Salmon fillet",
+      "Bread",
+      "Broccoli",
+      "Lemon",
+      "Fish"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.1,
+    "reviews": 263,
+    "calories": 858,
+    "total_mins": 64,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+115",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "116",
+    "title": "Delicious Recipe 116",
+    "ingredients": [
+      "Oregano",
+      "Potato",
+      "Tomatoes",
+      "Onion",
+      "Cucumber",
+      "Milk",
+      "Sugar",
+      "Carrots",
+      "Egg"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegetarian"
+    ],
+    "ratings": 3.4,
+    "reviews": 323,
+    "calories": 362,
+    "total_mins": 52,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+116",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "117",
+    "title": "Delicious Recipe 117",
+    "ingredients": [
+      "Chocolate chips",
+      "Beef strips",
+      "Chocolate chips",
+      "Olive oil",
+      "Onion",
+      "Zucchini"
+    ],
+    "category": [
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "ratings": 3.9,
+    "reviews": 631,
+    "calories": 667,
+    "total_mins": 49,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+117",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "118",
+    "title": "Delicious Recipe 118",
+    "ingredients": [
+      "Lettuce",
+      "Butter",
+      "Turkey",
+      "Tomatoes",
+      "Asparagus"
+    ],
+    "category": [
+      "Low-Carb",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.8,
+    "reviews": 729,
+    "calories": 403,
+    "total_mins": 38,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+118",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "119",
+    "title": "Delicious Recipe 119",
+    "ingredients": [
+      "Cherry tomatoes",
+      "Pasta",
+      "Cucumber",
+      "Cream",
+      "Asparagus",
+      "Sugar",
+      "Parmesan",
+      "Broccoli",
+      "Butter"
+    ],
+    "category": [
+      "Keto",
+      "Gluten-Free"
+    ],
+    "ratings": 3.4,
+    "reviews": 553,
+    "calories": 344,
+    "total_mins": 87,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+119",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "120",
+    "title": "Delicious Recipe 120",
+    "ingredients": [
+      "Cherry tomatoes",
+      "Olive oil",
+      "Vanilla extract",
+      "Butter",
+      "Zucchini"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.9,
+    "reviews": 427,
+    "calories": 351,
+    "total_mins": 67,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+120",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "121",
+    "title": "Delicious Recipe 121",
+    "ingredients": [
+      "Chocolate chips",
+      "Turkey",
+      "Cumin",
+      "Tortillas",
+      "Parmesan",
+      "Carrot"
+    ],
+    "category": [
+      "Low-Carb",
+      "Non-Vegetarian"
+    ],
+    "ratings": 5,
+    "reviews": 151,
+    "calories": 480,
+    "total_mins": 17,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+121",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "122",
+    "title": "Delicious Recipe 122",
+    "ingredients": [
+      "Tortillas",
+      "Herbs",
+      "Chocolate chips",
+      "Mushroom",
+      "Butter"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 656,
+    "calories": 517,
+    "total_mins": 58,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+122",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "123",
+    "title": "Delicious Recipe 123",
+    "ingredients": [
+      "Cumin",
+      "Broccoli",
+      "Egg",
+      "Zucchini",
+      "Lamb"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.5,
+    "reviews": 434,
+    "calories": 849,
+    "total_mins": 60,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+123",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "124",
+    "title": "Delicious Recipe 124",
+    "ingredients": [
+      "Mushrooms",
+      "Paprika",
+      "Vanilla extract",
+      "Tortillas",
+      "Potato"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.5,
+    "reviews": 937,
+    "calories": 762,
+    "total_mins": 63,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+124",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "125",
+    "title": "Delicious Recipe 125",
+    "ingredients": [
+      "Sugar",
+      "Lettuce",
+      "Ginger",
+      "Asparagus",
+      "Olive oil",
+      "Salt",
+      "Garlic",
+      "Cherry Tomatoes",
+      "Cabbage slaw",
+      "Tomato"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.7,
+    "reviews": 163,
+    "calories": 271,
+    "total_mins": 67,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+125",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "126",
+    "title": "Delicious Recipe 126",
+    "ingredients": [
+      "Cucumber",
+      "Salmon fillet",
+      "Bell Pepper",
+      "Mushrooms",
+      "Chicken breast",
+      "Chocolate chips",
+      "Cream"
+    ],
+    "category": [
+      "Keto",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.9,
+    "reviews": 912,
+    "calories": 808,
+    "total_mins": 26,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+126",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "127",
+    "title": "Delicious Recipe 127",
+    "ingredients": [
+      "Carrot",
+      "Butter",
+      "Lime",
+      "Cream",
+      "Ginger",
+      "Potato",
+      "Tomato",
+      "Beef strips"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 5,
+    "reviews": 536,
+    "calories": 889,
+    "total_mins": 27,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+127",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "128",
+    "title": "Delicious Recipe 128",
+    "ingredients": [
+      "Lime",
+      "Carrots",
+      "Cherry tomatoes",
+      "Mushroom",
+      "Lettuce",
+      "Mushrooms",
+      "Salmon fillet",
+      "Chicken breast",
+      "Pork"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.1,
+    "reviews": 280,
+    "calories": 433,
+    "total_mins": 13,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+128",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "129",
+    "title": "Delicious Recipe 129",
+    "ingredients": [
+      "Garlic",
+      "Flour",
+      "Cream",
+      "Lamb",
+      "Flour",
+      "Mushroom",
+      "Lettuce",
+      "Cabbage slaw"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Gluten-Free"
+    ],
+    "ratings": 4.9,
+    "reviews": 34,
+    "calories": 404,
+    "total_mins": 60,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+129",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "130",
+    "title": "Delicious Recipe 130",
+    "ingredients": [
+      "Cucumber",
+      "Tomato",
+      "Dill",
+      "Tomatoes",
+      "Lemon",
+      "Cream",
+      "Lettuce",
+      "Chicken",
+      "Chocolate chips",
+      "Cumin"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.1,
+    "reviews": 303,
+    "calories": 627,
+    "total_mins": 32,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+130",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "131",
+    "title": "Delicious Recipe 131",
+    "ingredients": [
+      "Lime",
+      "Soy sauce",
+      "Butter",
+      "Cabbage slaw",
+      "Sugar",
+      "White fish",
+      "Carrot",
+      "Broccoli",
+      "Zucchini",
+      "Asparagus"
+    ],
+    "category": [
+      "Keto",
+      "Gluten-Free"
+    ],
+    "ratings": 3.9,
+    "reviews": 355,
+    "calories": 285,
+    "total_mins": 61,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+131",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "132",
+    "title": "Delicious Recipe 132",
+    "ingredients": [
+      "Carrots",
+      "Cabbage",
+      "Milk",
+      "Bell peppers",
+      "Cherry Tomatoes",
+      "Salmon fillet",
+      "Chicken",
+      "Bread",
+      "Herbs",
+      "Tomato"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 4.2,
+    "reviews": 664,
+    "calories": 812,
+    "total_mins": 14,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+132",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "133",
+    "title": "Delicious Recipe 133",
+    "ingredients": [
+      "Cumin",
+      "Bread",
+      "Ginger",
+      "Broccoli",
+      "Ginger",
+      "Potato"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.4,
+    "reviews": 856,
+    "calories": 616,
+    "total_mins": 48,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+133",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "134",
+    "title": "Delicious Recipe 134",
+    "ingredients": [
+      "Potato",
+      "Cabbage",
+      "Cabbage slaw",
+      "Cucumber",
+      "Onion",
+      "Bell Pepper",
+      "Herbs",
+      "Beef strips",
+      "Chocolate chips",
+      "Zucchini"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.3,
+    "reviews": 33,
+    "calories": 288,
+    "total_mins": 36,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+134",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "135",
+    "title": "Delicious Recipe 135",
+    "ingredients": [
+      "Broccoli",
+      "Cucumber",
+      "Basil",
+      "Tomato",
+      "Tortillas",
+      "Salmon fillet",
+      "Cream"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.5,
+    "reviews": 867,
+    "calories": 260,
+    "total_mins": 54,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+135",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "136",
+    "title": "Delicious Recipe 136",
+    "ingredients": [
+      "Cabbage",
+      "Oregano",
+      "Parmesan",
+      "Broccoli",
+      "Mushroom",
+      "Lime",
+      "Lettuce",
+      "Lemon",
+      "Pepper"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 3.7,
+    "reviews": 756,
+    "calories": 210,
+    "total_mins": 89,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+136",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "137",
+    "title": "Delicious Recipe 137",
+    "ingredients": [
+      "Zucchini",
+      "Yogurt",
+      "Lemon",
+      "Bell peppers",
+      "Cream",
+      "Butter",
+      "Chicken",
+      "Beef strips",
+      "Pepper",
+      "Mushroom"
+    ],
+    "category": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "ratings": 3.6,
+    "reviews": 164,
+    "calories": 209,
+    "total_mins": 29,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+137",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "138",
+    "title": "Delicious Recipe 138",
+    "ingredients": [
+      "Broccoli",
+      "Broccoli",
+      "Turkey",
+      "Oregano",
+      "Lemon",
+      "Parmesan"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.3,
+    "reviews": 28,
+    "calories": 343,
+    "total_mins": 64,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+138",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "139",
+    "title": "Delicious Recipe 139",
+    "ingredients": [
+      "Chocolate chips",
+      "Broccoli",
+      "Mushrooms",
+      "Bell Pepper",
+      "Sugar"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Low-Carb"
+    ],
+    "ratings": 4.7,
+    "reviews": 622,
+    "calories": 873,
+    "total_mins": 55,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+139",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "140",
+    "title": "Delicious Recipe 140",
+    "ingredients": [
+      "Lime",
+      "Parmesan",
+      "Sugar",
+      "Cumin",
+      "Cherry tomatoes",
+      "Zucchini",
+      "Pasta",
+      "Flour",
+      "Flour",
+      "Garlic"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 3.9,
+    "reviews": 234,
+    "calories": 892,
+    "total_mins": 66,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+140",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "141",
+    "title": "Delicious Recipe 141",
+    "ingredients": [
+      "Chicken",
+      "Cheese",
+      "Vanilla extract",
+      "Chicken breast",
+      "Cucumber"
+    ],
+    "category": [
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ratings": 4.6,
+    "reviews": 358,
+    "calories": 296,
+    "total_mins": 78,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+141",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "142",
+    "title": "Delicious Recipe 142",
+    "ingredients": [
+      "Fish",
+      "Beef",
+      "Zucchini",
+      "Cheese",
+      "Butter",
+      "Broccoli",
+      "Cream",
+      "Asparagus",
+      "White fish"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.4,
+    "reviews": 192,
+    "calories": 624,
+    "total_mins": 16,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+142",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "143",
+    "title": "Delicious Recipe 143",
+    "ingredients": [
+      "White fish",
+      "Soy sauce",
+      "Rice",
+      "Cream",
+      "Sugar",
+      "Lamb",
+      "Zucchini",
+      "Chocolate chips"
+    ],
+    "category": [
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "ratings": 3.5,
+    "reviews": 690,
+    "calories": 219,
+    "total_mins": 62,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+143",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "144",
+    "title": "Delicious Recipe 144",
+    "ingredients": [
+      "Beef",
+      "Garlic",
+      "Lemon",
+      "Bell peppers",
+      "Bread",
+      "Sugar",
+      "Tortillas"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.4,
+    "reviews": 466,
+    "calories": 345,
+    "total_mins": 35,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+144",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "145",
+    "title": "Delicious Recipe 145",
+    "ingredients": [
+      "Cream",
+      "Cumin",
+      "Ginger",
+      "Flour",
+      "Garlic",
+      "Soy sauce",
+      "Vanilla extract",
+      "Potato",
+      "Cheese"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3,
+    "reviews": 997,
+    "calories": 370,
+    "total_mins": 19,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+145",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "146",
+    "title": "Delicious Recipe 146",
+    "ingredients": [
+      "Chocolate chips",
+      "Lamb",
+      "Olive oil",
+      "Lettuce",
+      "Cucumber",
+      "Zucchini",
+      "Soy sauce",
+      "Rice",
+      "Mushrooms"
+    ],
+    "category": [
+      "Vegetarian",
+      "Keto"
+    ],
+    "ratings": 3.6,
+    "reviews": 646,
+    "calories": 356,
+    "total_mins": 40,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+146",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "147",
+    "title": "Delicious Recipe 147",
+    "ingredients": [
+      "Turkey",
+      "Flour",
+      "Broccoli",
+      "Zucchini",
+      "Carrot",
+      "Ginger",
+      "Spinach",
+      "Ginger"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.3,
+    "reviews": 442,
+    "calories": 758,
+    "total_mins": 87,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+147",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "148",
+    "title": "Delicious Recipe 148",
+    "ingredients": [
+      "Asparagus",
+      "Chicken",
+      "White fish",
+      "Cherry tomatoes",
+      "Parmesan",
+      "Tortillas",
+      "Pepper"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegan"
+    ],
+    "ratings": 4.5,
+    "reviews": 193,
+    "calories": 727,
+    "total_mins": 68,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+148",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "149",
+    "title": "Delicious Recipe 149",
+    "ingredients": [
+      "Cabbage slaw",
+      "Zucchini",
+      "Bell Pepper",
+      "Olive oil",
+      "Pepper",
+      "Vanilla extract"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Low-Carb"
+    ],
+    "ratings": 3.6,
+    "reviews": 174,
+    "calories": 585,
+    "total_mins": 68,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+149",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "150",
+    "title": "Delicious Recipe 150",
+    "ingredients": [
+      "Flour",
+      "Pepper",
+      "Carrots",
+      "Spinach",
+      "Parmesan",
+      "Asparagus",
+      "Tortillas",
+      "Salmon fillet",
+      "Lamb"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.2,
+    "reviews": 968,
+    "calories": 408,
+    "total_mins": 42,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+150",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "151",
+    "title": "Delicious Recipe 151",
+    "ingredients": [
+      "Tomatoes",
+      "Salt",
+      "Tortillas",
+      "Spinach",
+      "Carrot",
+      "Lemon",
+      "Asparagus"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.6,
+    "reviews": 475,
+    "calories": 548,
+    "total_mins": 58,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+151",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "152",
+    "title": "Delicious Recipe 152",
+    "ingredients": [
+      "Lettuce",
+      "Oregano",
+      "Sugar",
+      "Herbs",
+      "Asparagus",
+      "Yogurt"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.2,
+    "reviews": 334,
+    "calories": 698,
+    "total_mins": 23,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+152",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "153",
+    "title": "Delicious Recipe 153",
+    "ingredients": [
+      "Lamb",
+      "Onion",
+      "Asparagus",
+      "Paprika",
+      "Broccoli",
+      "Pasta",
+      "Cherry Tomatoes",
+      "Zucchini",
+      "Ginger"
+    ],
+    "category": [
+      "Vegan",
+      "Gluten-Free"
+    ],
+    "ratings": 3.5,
+    "reviews": 98,
+    "calories": 641,
+    "total_mins": 16,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+153",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "154",
+    "title": "Delicious Recipe 154",
+    "ingredients": [
+      "Garlic",
+      "Zucchini",
+      "Fish",
+      "Asparagus",
+      "Chicken breast",
+      "Yogurt"
+    ],
+    "category": [
+      "Keto",
+      "Vegan"
+    ],
+    "ratings": 3.6,
+    "reviews": 96,
+    "calories": 419,
+    "total_mins": 23,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+154",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "155",
+    "title": "Delicious Recipe 155",
+    "ingredients": [
+      "Bell Pepper",
+      "Mushroom",
+      "Fish",
+      "Zucchini",
+      "Lemon",
+      "Beef",
+      "Basil",
+      "Herbs"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.9,
+    "reviews": 249,
+    "calories": 590,
+    "total_mins": 48,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+155",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "156",
+    "title": "Delicious Recipe 156",
+    "ingredients": [
+      "Lettuce",
+      "Tomatoes",
+      "Vanilla extract",
+      "Carrot",
+      "Butter",
+      "Parmesan",
+      "Yogurt",
+      "Turkey"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.9,
+    "reviews": 401,
+    "calories": 374,
+    "total_mins": 81,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+156",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "157",
+    "title": "Delicious Recipe 157",
+    "ingredients": [
+      "Cheese",
+      "Tomato",
+      "Lemon",
+      "White fish",
+      "Cumin",
+      "Egg"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Vegetarian"
+    ],
+    "ratings": 3.3,
+    "reviews": 404,
+    "calories": 302,
+    "total_mins": 15,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+157",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "158",
+    "title": "Delicious Recipe 158",
+    "ingredients": [
+      "Milk",
+      "Broccoli",
+      "Avocado",
+      "Flour",
+      "Beef",
+      "Cabbage"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 5,
+    "reviews": 510,
+    "calories": 608,
+    "total_mins": 58,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+158",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "159",
+    "title": "Delicious Recipe 159",
+    "ingredients": [
+      "Chocolate chips",
+      "Sugar",
+      "Cabbage",
+      "Turkey",
+      "Vanilla extract",
+      "Salmon fillet"
+    ],
+    "category": [
+      "Vegan",
+      "Low-Carb"
+    ],
+    "ratings": 4.9,
+    "reviews": 882,
+    "calories": 304,
+    "total_mins": 24,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+159",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "160",
+    "title": "Delicious Recipe 160",
+    "ingredients": [
+      "Cucumber",
+      "Soy sauce",
+      "Cherry Tomatoes",
+      "Sugar",
+      "Butter"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegan"
+    ],
+    "ratings": 3.1,
+    "reviews": 163,
+    "calories": 874,
+    "total_mins": 62,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+160",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "161",
+    "title": "Delicious Recipe 161",
+    "ingredients": [
+      "Dill",
+      "Dill",
+      "Basil",
+      "Garlic",
+      "Mushroom",
+      "Paprika"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.2,
+    "reviews": 860,
+    "calories": 899,
+    "total_mins": 63,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+161",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "162",
+    "title": "Delicious Recipe 162",
+    "ingredients": [
+      "Zucchini",
+      "Chocolate chips",
+      "Lettuce",
+      "Sugar",
+      "Tortillas",
+      "Pepper",
+      "Pasta",
+      "Flour",
+      "Cheese",
+      "Lime"
+    ],
+    "category": [
+      "Vegan",
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.9,
+    "reviews": 438,
+    "calories": 292,
+    "total_mins": 55,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+162",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "163",
+    "title": "Delicious Recipe 163",
+    "ingredients": [
+      "Soy sauce",
+      "Cherry tomatoes",
+      "Tomatoes",
+      "Bread",
+      "Avocado",
+      "Cream",
+      "Ginger",
+      "Beef",
+      "Soy sauce",
+      "Potato"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.2,
+    "reviews": 35,
+    "calories": 788,
+    "total_mins": 78,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+163",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "164",
+    "title": "Delicious Recipe 164",
+    "ingredients": [
+      "Beef",
+      "Pork",
+      "Lime",
+      "Dill",
+      "Cream",
+      "Herbs",
+      "Yogurt",
+      "Milk"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.6,
+    "reviews": 666,
+    "calories": 830,
+    "total_mins": 43,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+164",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "165",
+    "title": "Delicious Recipe 165",
+    "ingredients": [
+      "Cheese",
+      "Bell Pepper",
+      "Carrot",
+      "Ginger",
+      "Lettuce",
+      "Cumin"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.2,
+    "reviews": 332,
+    "calories": 577,
+    "total_mins": 82,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+165",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "166",
+    "title": "Delicious Recipe 166",
+    "ingredients": [
+      "Cherry tomatoes",
+      "Milk",
+      "Chicken breast",
+      "Bread",
+      "Paprika",
+      "Tomatoes",
+      "Tortillas",
+      "Cucumber",
+      "Lemon"
+    ],
+    "category": [
+      "Keto"
+    ],
+    "ratings": 3.9,
+    "reviews": 911,
+    "calories": 418,
+    "total_mins": 77,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+166",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "167",
+    "title": "Delicious Recipe 167",
+    "ingredients": [
+      "Pork",
+      "Cream",
+      "Broccoli",
+      "Sugar",
+      "Lettuce",
+      "Carrots"
+    ],
+    "category": [
+      "Keto",
+      "Vegetarian"
+    ],
+    "ratings": 4.6,
+    "reviews": 246,
+    "calories": 784,
+    "total_mins": 65,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+167",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "168",
+    "title": "Delicious Recipe 168",
+    "ingredients": [
+      "Soy sauce",
+      "Lettuce",
+      "Parmesan",
+      "Cherry tomatoes",
+      "Tomato",
+      "Herbs",
+      "White fish"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Gluten-Free"
+    ],
+    "ratings": 3.7,
+    "reviews": 131,
+    "calories": 209,
+    "total_mins": 73,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+168",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "169",
+    "title": "Delicious Recipe 169",
+    "ingredients": [
+      "Lemon",
+      "Cheese",
+      "Lettuce",
+      "Bell peppers",
+      "Dill"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Vegan"
+    ],
+    "ratings": 3.5,
+    "reviews": 369,
+    "calories": 458,
+    "total_mins": 78,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+169",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "170",
+    "title": "Delicious Recipe 170",
+    "ingredients": [
+      "Sugar",
+      "Sugar",
+      "Asparagus",
+      "Dill",
+      "Chicken",
+      "Tomatoes",
+      "Cream",
+      "Mushroom",
+      "Butter"
+    ],
+    "category": [
+      "Vegan",
+      "Keto"
+    ],
+    "ratings": 4.7,
+    "reviews": 682,
+    "calories": 346,
+    "total_mins": 63,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+170",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "171",
+    "title": "Delicious Recipe 171",
+    "ingredients": [
+      "Soy sauce",
+      "Butter",
+      "Paprika",
+      "Pepper",
+      "Lettuce",
+      "Asparagus",
+      "Tomatoes",
+      "Vanilla extract",
+      "Onion"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.8,
+    "reviews": 916,
+    "calories": 229,
+    "total_mins": 55,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+171",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "172",
+    "title": "Delicious Recipe 172",
+    "ingredients": [
+      "Mushroom",
+      "Vanilla extract",
+      "Spinach",
+      "Zucchini",
+      "Lime"
+    ],
+    "category": [
+      "Vegetarian",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.8,
+    "reviews": 232,
+    "calories": 499,
+    "total_mins": 88,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+172",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "173",
+    "title": "Delicious Recipe 173",
+    "ingredients": [
+      "Parmesan",
+      "Cherry Tomatoes",
+      "Vanilla extract",
+      "Cucumber",
+      "Pasta",
+      "Lemon",
+      "Chocolate chips",
+      "Mushroom",
+      "Cheese",
+      "Asparagus"
+    ],
+    "category": [
+      "Keto",
+      "Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 724,
+    "calories": 750,
+    "total_mins": 47,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+173",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "174",
+    "title": "Delicious Recipe 174",
+    "ingredients": [
+      "Cream",
+      "Mushroom",
+      "Cumin",
+      "Fish",
+      "Ginger",
+      "Zucchini",
+      "Garlic",
+      "Asparagus",
+      "Sugar"
+    ],
+    "category": [
+      "Low-Carb",
+      "Keto"
+    ],
+    "ratings": 4.9,
+    "reviews": 741,
+    "calories": 640,
+    "total_mins": 67,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+174",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "175",
+    "title": "Delicious Recipe 175",
+    "ingredients": [
+      "Mushrooms",
+      "Salt",
+      "Lime",
+      "Butter",
+      "Basil",
+      "Cherry tomatoes",
+      "Asparagus",
+      "Butter"
+    ],
+    "category": [
+      "Vegan",
+      "Vegetarian"
+    ],
+    "ratings": 3.5,
+    "reviews": 382,
+    "calories": 353,
+    "total_mins": 34,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+175",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "176",
+    "title": "Delicious Recipe 176",
+    "ingredients": [
+      "Cucumber",
+      "Onion",
+      "Zucchini",
+      "Fish",
+      "Cream",
+      "Tortillas"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 3.6,
+    "reviews": 468,
+    "calories": 694,
+    "total_mins": 80,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+176",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "177",
+    "title": "Delicious Recipe 177",
+    "ingredients": [
+      "Spinach",
+      "Cucumber",
+      "Garlic",
+      "Lettuce",
+      "Butter",
+      "Lettuce",
+      "Chicken",
+      "Oregano",
+      "Milk",
+      "Cabbage"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3.1,
+    "reviews": 796,
+    "calories": 669,
+    "total_mins": 82,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+177",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "178",
+    "title": "Delicious Recipe 178",
+    "ingredients": [
+      "Sugar",
+      "Bell Pepper",
+      "Lime",
+      "Tomato",
+      "Asparagus"
+    ],
+    "category": [
+      "Low-Carb",
+      "Non-Vegetarian"
+    ],
+    "ratings": 3.4,
+    "reviews": 264,
+    "calories": 664,
+    "total_mins": 77,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+178",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "179",
+    "title": "Delicious Recipe 179",
+    "ingredients": [
+      "Dill",
+      "Bell peppers",
+      "Sugar",
+      "Olive oil",
+      "Cucumber",
+      "Milk",
+      "Lemon",
+      "Tomatoes"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.3,
+    "reviews": 459,
+    "calories": 217,
+    "total_mins": 39,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+179",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "180",
+    "title": "Delicious Recipe 180",
+    "ingredients": [
+      "Milk",
+      "Chicken",
+      "Mushrooms",
+      "Cabbage slaw",
+      "Egg"
+    ],
+    "category": [
+      "Vegetarian"
+    ],
+    "ratings": 4.7,
+    "reviews": 570,
+    "calories": 778,
+    "total_mins": 37,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+180",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "181",
+    "title": "Delicious Recipe 181",
+    "ingredients": [
+      "Carrot",
+      "Lamb",
+      "Turkey",
+      "Sugar",
+      "Cream"
+    ],
+    "category": [
+      "Keto",
+      "Gluten-Free"
+    ],
+    "ratings": 3.9,
+    "reviews": 777,
+    "calories": 838,
+    "total_mins": 74,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+181",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "182",
+    "title": "Delicious Recipe 182",
+    "ingredients": [
+      "Carrots",
+      "Avocado",
+      "Milk",
+      "White fish",
+      "Broccoli"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 4.5,
+    "reviews": 598,
+    "calories": 296,
+    "total_mins": 84,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+182",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "183",
+    "title": "Delicious Recipe 183",
+    "ingredients": [
+      "Tortillas",
+      "Bell Pepper",
+      "Soy sauce",
+      "Olive oil",
+      "Basil",
+      "Beef strips",
+      "Chocolate chips"
+    ],
+    "category": [
+      "Low-Carb",
+      "Keto"
+    ],
+    "ratings": 3.7,
+    "reviews": 609,
+    "calories": 454,
+    "total_mins": 56,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+183",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "184",
+    "title": "Delicious Recipe 184",
+    "ingredients": [
+      "Chicken breast",
+      "Beef",
+      "Broccoli",
+      "Sugar",
+      "Herbs",
+      "Carrots",
+      "Rice"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 4.7,
+    "reviews": 591,
+    "calories": 427,
+    "total_mins": 16,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+184",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "185",
+    "title": "Delicious Recipe 185",
+    "ingredients": [
+      "Avocado",
+      "Tortillas",
+      "Pepper",
+      "Chocolate chips",
+      "Fish"
+    ],
+    "category": [
+      "Gluten-Free"
+    ],
+    "ratings": 3,
+    "reviews": 697,
+    "calories": 773,
+    "total_mins": 66,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+185",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "186",
+    "title": "Delicious Recipe 186",
+    "ingredients": [
+      "Pork",
+      "Asparagus",
+      "White fish",
+      "Turkey",
+      "Dill",
+      "Garlic"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegan"
+    ],
+    "ratings": 4,
+    "reviews": 795,
+    "calories": 257,
+    "total_mins": 34,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+186",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "187",
+    "title": "Delicious Recipe 187",
+    "ingredients": [
+      "Cabbage slaw",
+      "Flour",
+      "Cumin",
+      "Tomatoes",
+      "Sugar",
+      "Tortillas"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.4,
+    "reviews": 500,
+    "calories": 771,
+    "total_mins": 70,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+187",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "188",
+    "title": "Delicious Recipe 188",
+    "ingredients": [
+      "Cabbage slaw",
+      "Yogurt",
+      "Avocado",
+      "Chocolate chips",
+      "Cream",
+      "Turkey",
+      "Salmon fillet"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Low-Carb"
+    ],
+    "ratings": 4.8,
+    "reviews": 574,
+    "calories": 897,
+    "total_mins": 16,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+188",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "189",
+    "title": "Delicious Recipe 189",
+    "ingredients": [
+      "Mushrooms",
+      "Turkey",
+      "Beef",
+      "Flour",
+      "Salt"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 4.3,
+    "reviews": 534,
+    "calories": 626,
+    "total_mins": 86,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+189",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "190",
+    "title": "Delicious Recipe 190",
+    "ingredients": [
+      "Lettuce",
+      "Mushroom",
+      "Fish",
+      "Basil",
+      "Milk",
+      "Pasta",
+      "Tomatoes",
+      "Cherry tomatoes"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Low-Carb"
+    ],
+    "ratings": 5,
+    "reviews": 688,
+    "calories": 853,
+    "total_mins": 61,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+190",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "191",
+    "title": "Delicious Recipe 191",
+    "ingredients": [
+      "Cheese",
+      "Dill",
+      "Fish",
+      "Chocolate chips",
+      "Broccoli",
+      "Cream"
+    ],
+    "category": [
+      "Vegan"
+    ],
+    "ratings": 3.7,
+    "reviews": 711,
+    "calories": 504,
+    "total_mins": 80,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+191",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "192",
+    "title": "Delicious Recipe 192",
+    "ingredients": [
+      "Garlic",
+      "Bell peppers",
+      "Onion",
+      "Lamb",
+      "Flour",
+      "Asparagus",
+      "Salmon fillet",
+      "Ginger",
+      "Turkey",
+      "Cumin"
+    ],
+    "category": [
+      "Non-Vegetarian"
+    ],
+    "ratings": 4.2,
+    "reviews": 673,
+    "calories": 468,
+    "total_mins": 88,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+192",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "193",
+    "title": "Delicious Recipe 193",
+    "ingredients": [
+      "Soy sauce",
+      "Lettuce",
+      "Olive oil",
+      "Zucchini",
+      "Turkey"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Gluten-Free"
+    ],
+    "ratings": 4.1,
+    "reviews": 103,
+    "calories": 366,
+    "total_mins": 78,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+193",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "194",
+    "title": "Delicious Recipe 194",
+    "ingredients": [
+      "Herbs",
+      "Cheese",
+      "Spinach",
+      "White fish",
+      "Salmon fillet",
+      "Butter",
+      "Chocolate chips",
+      "Cherry Tomatoes",
+      "Vanilla extract",
+      "Soy sauce"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 5,
+    "reviews": 613,
+    "calories": 770,
+    "total_mins": 32,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+194",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "195",
+    "title": "Delicious Recipe 195",
+    "ingredients": [
+      "Dill",
+      "Soy sauce",
+      "Mushroom",
+      "Chicken",
+      "Garlic"
+    ],
+    "category": [
+      "Low-Carb",
+      "Vegan"
+    ],
+    "ratings": 3.3,
+    "reviews": 864,
+    "calories": 438,
+    "total_mins": 26,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+195",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  },
+  {
+    "recipe_id": "196",
+    "title": "Delicious Recipe 196",
+    "ingredients": [
+      "Chocolate chips",
+      "Salt",
+      "Ginger",
+      "Lettuce",
+      "Lime",
+      "Fish"
+    ],
+    "category": [
+      "Low-Carb",
+      "Keto"
+    ],
+    "ratings": 3.3,
+    "reviews": 360,
+    "calories": 817,
+    "total_mins": 19,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+196",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "197",
+    "title": "Delicious Recipe 197",
+    "ingredients": [
+      "Sugar",
+      "Rice",
+      "Cabbage",
+      "Avocado",
+      "Onion",
+      "Tortillas",
+      "Pasta",
+      "Basil"
+    ],
+    "category": [
+      "Low-Carb"
+    ],
+    "ratings": 3.9,
+    "reviews": 457,
+    "calories": 292,
+    "total_mins": 24,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+197",
+    "instructions": "Prepare all ingredients by washing and chopping. Cook meat or vegetables in a pan over medium heat. Add spices and seasonings to taste. Simmer until everything is cooked through. Plate and serve warm."
+  },
+  {
+    "recipe_id": "198",
+    "title": "Delicious Recipe 198",
+    "ingredients": [
+      "Flour",
+      "Lemon",
+      "Zucchini",
+      "Cucumber",
+      "White fish",
+      "Sugar",
+      "Soy sauce"
+    ],
+    "category": [
+      "Non-Vegetarian",
+      "Gluten-Free"
+    ],
+    "ratings": 4,
+    "reviews": 18,
+    "calories": 241,
+    "total_mins": 89,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+198",
+    "instructions": "Boil water in a pot and prepare any gluten-free grains or pasta. In a separate pan, cook vegetables and/or meat. Mix everything together in a large bowl. Add sauces or seasoning as desired. Serve immediately."
+  },
+  {
+    "recipe_id": "199",
+    "title": "Delicious Recipe 199",
+    "ingredients": [
+      "Zucchini",
+      "Dill",
+      "Basil",
+      "Lettuce",
+      "Cabbage"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Keto"
+    ],
+    "ratings": 3.1,
+    "reviews": 802,
+    "calories": 743,
+    "total_mins": 16,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+199",
+    "instructions": "Preheat oven to 375°F (190°C). Prepare ingredients by chopping and measuring them. Combine all ingredients in a mixing bowl. Transfer mixture to a baking dish or pan. Bake for 20-30 minutes until golden and cooked through."
+  },
+  {
+    "recipe_id": "200",
+    "title": "Delicious Recipe 200",
+    "ingredients": [
+      "Sugar",
+      "Turkey",
+      "Flour",
+      "Spinach",
+      "Zucchini",
+      "Mushrooms",
+      "Tomatoes",
+      "Paprika"
+    ],
+    "category": [
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "ratings": 4.1,
+    "reviews": 751,
+    "calories": 451,
+    "total_mins": 42,
+    "image_url": "https://via.placeholder.com/150?text=Recipe+200",
+    "instructions": "Wash and chop all vegetables. Heat oil in a pan over medium heat. Add the vegetables and sauté until tender. Season with salt, pepper, and any spices. Serve hot with your choice of side."
+  }
+]

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender - Personalized Recipe Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Additional inline styles for enhanced UI */
+        .main-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 2rem auto;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .sidebar {
+            width: 320px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            height: fit-content;
+            position: sticky;
+            top: 90px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-header {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .sidebar-header h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 2.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-container input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+            outline: none;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+
+        .category {
+            margin-bottom: 1.5rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .category:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .category h4 {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ingredients-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .ingredients-list label {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .ingredients-list label:hover {
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+
+        .ingredients-list input[type="checkbox"] {
+            margin-right: 0.8rem;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--primary-color);
+        }
+
+        .selected-ingredients {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        .selected-ingredients h4 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        #selectedIngredientsList {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .selected-ingredient {
+            display: flex;
+            align-items: center;
+            background-color: rgba(76, 175, 80, 0.1);
+            color: var(--primary-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .selected-ingredient:hover {
+            background-color: rgba(76, 175, 80, 0.2);
+        }
+
+        .remove-ingredient {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            margin-left: 0.5rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .remove-ingredient:hover {
+            background-color: rgba(76, 175, 80, 0.3);
+        }
+
+        .main-content {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1));
+            border-radius: 12px;
+        }
+
+        .hero-section h1 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .recipe-form {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+            outline: none;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--primary-color);
+        }
+
+        .search-button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .search-button:hover {
+            background-color: #388E3C;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-results {
+            margin-top: 2rem;
+        }
+
+        .recipe-card {
+            display: flex;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .recipe-image {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .recipe-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .recipe-card:hover .recipe-image img {
+            transform: scale(1.05);
+        }
+
+        .recipe-info {
+            flex: 1;
+            padding: 1.5rem;
+        }
+
+        .recipe-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: #333;
+        }
+
+        .recipe-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .recipe-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .recipe-meta span {
+            display: flex;
+            align-items: center;
+        }
+
+        .recipe-meta i {
+            margin-right: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 2rem;
+            color: #d32f2f;
+            background-color: rgba(211, 47, 47, 0.1);
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .recipe-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background-color: white;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            padding: 2rem;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #aaa;
+            transition: color 0.3s ease;
+        }
+
+        .close-modal:hover {
+            color: #333;
+        }
+
+        .recipe-details {
+            margin-top: 1.5rem;
+        }
+
+        .recipe-details img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-ingredients,
+        .recipe-instructions {
+            margin-top: 2rem;
+        }
+
+        .recipe-ingredients h3,
+        .recipe-instructions h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .recipe-ingredients ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .recipe-ingredients li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .recipe-instructions ol {
+            padding-left: 1.5rem;
+        }
+
+        .recipe-instructions li {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 992px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                max-height: none;
+            }
+
+            .recipe-card {
+                flex-direction: column;
+            }
+
+            .recipe-image {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .recipe-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .modal-content {
+                padding: 1.5rem;
+            }
+        }
+
+        .auth-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .auth-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .auth-button:hover {
+            background-color: #388E3C;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .user-name {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .sign-out-button {
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .sign-out-button:hover {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <i class="fas fa-utensils"></i>
+                Recipe Recommender
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recommender.html" class="active">Recipe Recommender</a>
+            <a href="help.html">Help</a>
+            <a href="settings.html">Settings</a>
+        </div>
+        <div class="auth-links">
+            <a href="auth.html" class="auth-button">Sign In</a>
+        </div>
+        <div class="user-profile" style="display: none;">
+            <img src="" alt="User Avatar" class="user-avatar">
+            <span class="user-name"></span>
+            <button onclick="authFunctions.signOut()" class="sign-out-button">
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Available Ingredients</h3>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="ingredientSearch" placeholder="Search ingredients...">
+                </div>
+            </div>
+
+            <div class="ingredient-categories">
+                <div class="category">
+                    <h4>Vegetables</h4>
+                    <div class="ingredients-list" data-category="vegetables">
+                        <label><input type="checkbox" value="tomato"> Tomato</label>
+                        <label><input type="checkbox" value="onion"> Onion</label>
+                        <label><input type="checkbox" value="garlic"> Garlic</label>
+                        <label><input type="checkbox" value="potato"> Potato</label>
+                        <label><input type="checkbox" value="carrot"> Carrot</label>
+                        <label><input type="checkbox" value="bell_pepper"> Bell Pepper</label>
+                        <label><input type="checkbox" value="mushroom"> Mushroom</label>
+                        <label><input type="checkbox" value="spinach"> Spinach</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Meat & Poultry</h4>
+                    <div class="ingredients-list" data-category="meat">
+                        <label><input type="checkbox" value="chicken"> Chicken</label>
+                        <label><input type="checkbox" value="beef"> Beef</label>
+                        <label><input type="checkbox" value="pork"> Pork</label>
+                        <label><input type="checkbox" value="lamb"> Lamb</label>
+                        <label><input type="checkbox" value="turkey"> Turkey</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Spices & Herbs</h4>
+                    <div class="ingredients-list" data-category="spices">
+                        <label><input type="checkbox" value="salt"> Salt</label>
+                        <label><input type="checkbox" value="pepper"> Pepper</label>
+                        <label><input type="checkbox" value="oregano"> Oregano</label>
+                        <label><input type="checkbox" value="basil"> Basil</label>
+                        <label><input type="checkbox" value="cumin"> Cumin</label>
+                        <label><input type="checkbox" value="paprika"> Paprika</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Dairy & Eggs</h4>
+                    <div class="ingredients-list" data-category="dairy">
+                        <label><input type="checkbox" value="milk"> Milk</label>
+                        <label><input type="checkbox" value="cheese"> Cheese</label>
+                        <label><input type="checkbox" value="butter"> Butter</label>
+                        <label><input type="checkbox" value="egg"> Egg</label>
+                        <label><input type="checkbox" value="yogurt"> Yogurt</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Grains & Pasta</h4>
+                    <div class="ingredients-list" data-category="grains">
+                        <label><input type="checkbox" value="rice"> Rice</label>
+                        <label><input type="checkbox" value="pasta"> Pasta</label>
+                        <label><input type="checkbox" value="bread"> Bread</label>
+                        <label><input type="checkbox" value="flour"> Flour</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selected-ingredients">
+                <h4>Selected Ingredients</h4>
+                <div id="selectedIngredientsList"></div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="hero-section">
+                <h1>Find Your Perfect Recipe</h1>
+                <p>Select your ingredients and preferences to get personalized recipe recommendations</p>
+            </div>
+
+            <div class="recipe-form">
+                <form id="recipeForm">
+                    <div class="form-group">
+                        <label for="selectedIngredients">Selected Ingredients:</label>
+                        <textarea id="selectedIngredients" readonly></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maxCalories">Maximum Calories:</label>
+                        <input type="number" id="maxCalories" min="0" step="100" value="1000">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Dietary Restrictions:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="dietaryRestrictions" value="vegetarian">
+                                Vegetarian</label>
+                            <label><input type="checkbox" name="dietaryRestrictions" value="vegan"> Vegan</label>
+                            <label><input type="checkbox" name="dietaryRestrictions" value="gluten-free">
+                                Gluten-Free</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cookingTime">Maximum Cooking Time (minutes):</label>
+                        <input type="number" id="cookingTime" min="0" step="5" value="60">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="difficultyLevel">Difficulty Level:</label>
+                        <select id="difficultyLevel">
+                            <option value="easy">Easy</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i> Find Recipes
+                    </button>
+                </form>
+            </div>
+
+            <div id="recipeResults" class="recipe-results">
+                <!-- Recipe results will be displayed here -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Recipe Recommender. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+        import { firebaseConfig, authFunctions } from "./firebase-config.js";
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Make authFunctions available globally
+        window.authFunctions = authFunctions;
+
+        // Set up auth state listener
+        onAuthStateChanged(auth, (user) => {
+            const authLinks = document.querySelector('.auth-links');
+            const userProfile = document.querySelector('.user-profile');
+
+            if (user) {
+                // User is signed in
+                if (authLinks) authLinks.style.display = 'none';
+                if (userProfile) {
+                    userProfile.style.display = 'flex';
+                    userProfile.querySelector('.user-name').textContent = user.displayName || user.email;
+                    userProfile.querySelector('.user-avatar').src = user.photoURL || 'https://via.placeholder.com/40';
+                }
+            } else {
+                // User is signed out
+                if (authLinks) authLinks.style.display = 'flex';
+                if (userProfile) userProfile.style.display = 'none';
+            }
+        });
+    </script>
+    <script type="module" src="firebase-config.js"></script>
+</body>
+
+</html>
