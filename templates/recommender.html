@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender - Personalized Recipe Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="{{ url_for('index') }}">
+                <i class="fas fa-utensils"></i>
+                Recipe Recommender
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('recommender_page') }}" class="active">Recommender</a>
+            <a href="{{ url_for('help') }}">Help</a>
+            <a href="{{ url_for('settings') }}">Settings</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Available Ingredients</h3>
+                <div class="search-container">
+                    <input type="text" id="ingredientSearch" placeholder="Search ingredients...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+            
+            <div class="ingredient-categories">
+                <div class="category">
+                    <h4>Vegetables</h4>
+                    <div class="ingredients-list" data-category="vegetables">
+                        <label><input type="checkbox" value="tomato"> Tomato</label>
+                        <label><input type="checkbox" value="onion"> Onion</label>
+                        <label><input type="checkbox" value="garlic"> Garlic</label>
+                        <label><input type="checkbox" value="potato"> Potato</label>
+                        <label><input type="checkbox" value="carrot"> Carrot</label>
+                        <label><input type="checkbox" value="bell_pepper"> Bell Pepper</label>
+                        <label><input type="checkbox" value="mushroom"> Mushroom</label>
+                        <label><input type="checkbox" value="spinach"> Spinach</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Meat & Poultry</h4>
+                    <div class="ingredients-list" data-category="meat">
+                        <label><input type="checkbox" value="chicken"> Chicken</label>
+                        <label><input type="checkbox" value="beef"> Beef</label>
+                        <label><input type="checkbox" value="pork"> Pork</label>
+                        <label><input type="checkbox" value="lamb"> Lamb</label>
+                        <label><input type="checkbox" value="turkey"> Turkey</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Spices & Herbs</h4>
+                    <div class="ingredients-list" data-category="spices">
+                        <label><input type="checkbox" value="salt"> Salt</label>
+                        <label><input type="checkbox" value="pepper"> Pepper</label>
+                        <label><input type="checkbox" value="oregano"> Oregano</label>
+                        <label><input type="checkbox" value="basil"> Basil</label>
+                        <label><input type="checkbox" value="cumin"> Cumin</label>
+                        <label><input type="checkbox" value="paprika"> Paprika</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Dairy & Eggs</h4>
+                    <div class="ingredients-list" data-category="dairy">
+                        <label><input type="checkbox" value="milk"> Milk</label>
+                        <label><input type="checkbox" value="cheese"> Cheese</label>
+                        <label><input type="checkbox" value="butter"> Butter</label>
+                        <label><input type="checkbox" value="egg"> Egg</label>
+                        <label><input type="checkbox" value="yogurt"> Yogurt</label>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h4>Grains & Pasta</h4>
+                    <div class="ingredients-list" data-category="grains">
+                        <label><input type="checkbox" value="rice"> Rice</label>
+                        <label><input type="checkbox" value="pasta"> Pasta</label>
+                        <label><input type="checkbox" value="bread"> Bread</label>
+                        <label><input type="checkbox" value="flour"> Flour</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selected-ingredients">
+                <h4>Selected Ingredients</h4>
+                <div id="selectedIngredientsList"></div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="search-section">
+                <h2>Find Your Perfect Recipe</h2>
+                <div class="search-container">
+                    <input type="text" id="recipeSearch" placeholder="Search for recipes...">
+                    <button onclick="handleRecipeSearch()">Search</button>
+                </div>
+            </div>
+
+            <div class="recipe-results">
+                <h3 class="results-title">Recommended Recipes</h3>
+                <div id="recipeResults" class="recipe-grid"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 

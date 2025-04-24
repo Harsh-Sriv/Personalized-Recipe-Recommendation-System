@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Recipe Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Recipe Recommender</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recommender.html">Recipe Recommender</a>
+            <a href="help.html">Help</a>
+            <a href="settings.html" class="active">Settings</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+            <h1>Settings</h1>
+            <p>Customize your recipe recommendations and save your preferences</p>
+        </section>
+
+        <section class="settings-section">
+            <h2>Dietary Preferences</h2>
+            <form id="dietaryPreferencesForm">
+                <div class="form-group">
+                    <label>Dietary Restrictions</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="vegetarian"> Vegetarian
+                        </label>
+                        <label>
+                            <input type="checkbox" name="vegan"> Vegan
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gluten-free"> Gluten Free
+                        </label>
+                        <label>
+                            <input type="checkbox" name="dairy-free"> Dairy Free
+                        </label>
+                        <label>
+                            <input type="checkbox" name="nut-free"> Nut Free
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="settings-section">
+            <h2>Default Search Preferences</h2>
+            <form id="searchPreferencesForm">
+                <div class="form-group">
+                    <label for="defaultMaxCalories">Default Maximum Calories</label>
+                    <input type="number" id="defaultMaxCalories" class="form-control" placeholder="e.g., 500">
+                </div>
+
+                <div class="form-group">
+                    <label for="defaultCookingTime">Default Maximum Cooking Time (minutes)</label>
+                    <input type="number" id="defaultCookingTime" class="form-control" placeholder="e.g., 30">
+                </div>
+
+                <div class="form-group">
+                    <label for="defaultDifficulty">Default Difficulty Level</label>
+                    <select id="defaultDifficulty" class="form-control">
+                        <option value="any">Any</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+
+        <section class="settings-section">
+            <h2>Common Ingredients</h2>
+            <form id="commonIngredientsForm">
+                <div class="form-group">
+                    <label for="commonIngredients">Your Common Ingredients (comma-separated)</label>
+                    <textarea id="commonIngredients" class="form-control" rows="4" placeholder="e.g., chicken, rice, tomatoes"></textarea>
+                </div>
+            </form>
+        </section>
+
+        <section class="settings-section">
+            <h2>Saved Recipes</h2>
+            <div id="savedRecipes" class="saved-recipes">
+                <!-- Saved recipes will be displayed here -->
+            </div>
+        </section>
+
+        <button type="button" class="cta-button" onclick="saveSettings()">Save Settings</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Recommender. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
