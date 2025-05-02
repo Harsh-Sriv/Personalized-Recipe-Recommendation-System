@@ -1,4 +1,4 @@
-🍽️ Smart Recipe Recommender
+🍽️ Recipe Recommendation System
 A web-based application integrated with a smart bot that helps users find the best recipes based on their available inventory, dietary restrictions, and personal preferences.
 
 🚀 Features
